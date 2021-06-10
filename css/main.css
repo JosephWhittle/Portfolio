@@ -1,0 +1,117 @@
+/* resets */
+/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+html {
+  font-size: 1rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* base styles  */
+/* line 23, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+body {
+  width: 100%;
+  height: auto;
+}
+
+/* line 31, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+p {
+  font-size: 1rem;
+}
+
+/* utility */
+@media screen and (max-width: 768px) {
+  /* line 41, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* line 47, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  .hide-tablet {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1259px) {
+  /* line 53, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  /* line 59, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  .hide-desktop-lg {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "";
+  src: url("");
+}
+
+/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidenav */
+  font-size: 28px;
+  /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  /* line 10, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+  .sidenav {
+    padding-top: 15px;
+  }
+  /* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* line 13, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* line 21, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*# sourceMappingURL=main.css.map */
