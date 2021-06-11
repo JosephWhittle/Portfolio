@@ -1,20 +1,39 @@
-/* base styles  */
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 html {
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* base styles  */
 body {
     width: 100%;
     height: auto;
 }
 
 h1, h2, h3, h4, h5 {
-
 }
 
 p {
     font-size: 1rem;
 }
+
+
+
+
 
 
 /* utility */
@@ -40,4 +59,10 @@ p {
     .hide-desktop-lg {
         display: none;
     }
+}
+
+
+@font-face {
+    font-family: "";
+    src: url("");
 }

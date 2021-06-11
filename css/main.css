@@ -1,69 +1,47 @@
-/* resets */
-/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+/* base styles  */
+/* line 2, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 html {
-  font-size: 1rem;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
-a {
-  text-decoration: none;
-}
-
-/* base styles  */
-/* line 22, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+/* line 6, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 body {
   width: 100%;
   height: auto;
 }
 
-/* line 30, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+/* line 15, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 p {
   font-size: 1rem;
 }
 
 /* utility */
 @media screen and (max-width: 768px) {
-  /* line 41, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+  /* line 22, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-mobile {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 47, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+  /* line 28, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-tablet {
     display: none;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1259px) {
-  /* line 53, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+  /* line 34, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-desktop {
     display: none;
   }
 }
 
 @media screen and (min-width: 1260px) {
-  /* line 59, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
+  /* line 40, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-desktop-lg {
     display: none;
   }
-}
-
-@font-face {
-  font-family: "";
-  src: url("");
 }
 
 /* line 4, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
