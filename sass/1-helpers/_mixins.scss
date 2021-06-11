@@ -7,8 +7,13 @@
 // Mixins written by yours truly
 // *****************
 
-@mixin name {
-    
+
+//Mixin that streamlines hiding certain elements by inputting values where it will be hidden between.
+@mixin hideElement ($min-size, $max-size) {
+    @media screen and (min-width:$min-size) and (max-width:$max-size) {
+        display: none;
+        
+    }
 }
 
 
