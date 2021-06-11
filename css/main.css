@@ -1,5 +1,5 @@
 /* resets */
-/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 * {
   margin: 0;
   padding: 0;
@@ -8,55 +8,54 @@
   vertical-align: baseline;
 }
 
-/* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+/* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 html {
   font-size: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 a {
   text-decoration: none;
-  color: white;
 }
 
 /* base styles  */
-/* line 23, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+/* line 22, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 body {
   width: 100%;
   height: auto;
 }
 
-/* line 31, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+/* line 30, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
 p {
   font-size: 1rem;
 }
 
 /* utility */
 @media screen and (max-width: 768px) {
-  /* line 41, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  /* line 41, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-mobile {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  /* line 47, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  /* line 47, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-tablet {
     display: none;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1259px) {
-  /* line 53, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  /* line 53, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-desktop {
     display: none;
   }
 }
 
 @media screen and (min-width: 1260px) {
-  /* line 59, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/base/_base.scss */
+  /* line 59, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_base.scss */
   .hide-desktop-lg {
     display: none;
   }
@@ -67,27 +66,48 @@ p {
   src: url("");
 }
 
-/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+/* line 4, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
 .main {
   margin-left: 160px;
   /* Same as the width of the sidenav */
-  font-size: 28px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
+}
+
+/* line 9, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
+.splash-page {
+  background-image: url("/images/pexels-david-bartus-963278.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
+.splash-page h1 {
+  font-size: 5rem;
+  padding: 5rem;
+  color: blue;
+}
+
+/* line 23, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
+.splash-page p {
+  font-size: 2rem;
+  color: yellow;
+  padding: 5rem;
 }
 
 @media screen and (max-height: 450px) {
-  /* line 10, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+  /* line 33, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
   .sidenav {
     padding-top: 15px;
   }
-  /* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_mainarea.scss */
+  /* line 34, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_mainarea.scss */
   .sidenav a {
     font-size: 18px;
   }
 }
 
-/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
 .sidenav {
   height: 100%;
   width: 160px;
@@ -100,7 +120,7 @@ p {
   padding-top: 20px;
 }
 
-/* line 13, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+/* line 13, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -109,7 +129,34 @@ p {
   display: block;
 }
 
-/* line 21, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/components/_sidenav.scss */
+/* line 21, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* line 1, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_sidenav.scss */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* line 13, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_sidenav.scss */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* line 21, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_sidenav.scss */
 .sidenav a:hover {
   color: #f1f1f1;
 }

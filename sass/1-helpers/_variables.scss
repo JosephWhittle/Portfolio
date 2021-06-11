@@ -1,0 +1,30 @@
+// This should contain only varible declarations
+// (A reminder than css and sass both have their own varibles that behave very differently) 
+
+
+// *****************
+// Colours
+// *****************
+
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+
+// *****************
+// Font stacks
+// *****************
+
+
+
+
+// Sass mixin media queries varibles
+$breakpoints: (
+    "phone":        400px,
+    "phone-wide":   480px,
+    "phablet":      560px,
+    "tablet-small": 640px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
