@@ -1,68 +1,16 @@
-
-/* resets */
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-}
-
-html {
-    font-size: 1rem;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* base styles  */
-body {
-    width: 100%;
-    height: auto;
-}
-
-h1, h2, h3, h4, h5 {
-}
-
-p {
-    font-size: 1rem;
-}
+// This file should contain type related stuff, like @font-face declarations and style application
+// to elements that are type related only. 
+// scale, vertical rythem, font colours should all be in here
 
 
+// Font inports 
+@font-face {                     
+    font-family: Raleway;
+    src: url(/fonts/Raleway-VariableFont_wght.ttf);
+  }
 
+  @font-face {
+    font-family: Raleway-Italic;
+    src: url(/fonts/Raleway-Italic-VariableFont_wght.ttf);
+  }
 
-
-
-/* utility */
-@media screen and (max-width: 768px) {
-    .hide-mobile {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .hide-tablet {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1259px) {
-    .hide-desktop {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1260px) {
-    .hide-desktop-lg {
-        display: none;
-    }
-}
-
-
-@font-face {
-    font-family: "";
-    src: url("");
-}

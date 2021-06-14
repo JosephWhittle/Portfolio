@@ -6,16 +6,39 @@
 // Colours
 // *****************
 
+// Hex named colours
+$Raisin-Black: #252934;
+$indendence: #4C556B;
+$Razzmatazz: #E31B6D;
+$Ultramaine-Blue: #4361EE;
+$Carolina-Blue: #20A4F3;
+
+// Descriptive colours 
+
+        // FOR EXAMPLE PRIMARY, SECONDARY, TERTAIRY, THEME, BASE ect
+$base-color: #c6538c;
+
 $base-color: #c6538c;
 $border-dark: rgba($base-color, 0.88);
 
 
 // *****************
-// Font stacks
+// Font related
 // *****************
 
+// Font weights 
+$light: 300;
+$normal: 400;
+$semibold: 500;
+$bold: 700;
+
+// font stacks
+$sans-serif: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
 
 
+// *****************
+// Sass varibles
+// *****************
 
 // Sass mixin media queries varibles
 $breakpoints: (
@@ -28,3 +51,6 @@ $breakpoints: (
     "desktop":      1248px,
     "desktop-wide": 1440px
 );
+
+// For consistency on the margins of the static nav bar
+$nav-bar-width:10rem;

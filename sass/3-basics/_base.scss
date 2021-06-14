@@ -1,6 +1,9 @@
 /* base styles  */
+
+// Base selectors 
 html {
     box-sizing: border-box;
+    font-size: 100%
 }
 
 body {
@@ -9,6 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+    color:white;
 
 }
 
@@ -17,27 +21,18 @@ p {
 }
 
 
-/* utility */
-@media screen and (max-width: 768px) {
-    .hide-mobile {
-        display: none;
-    }
+
+// Base customs
+
+// Containers are good to set the max width, width, padding and marings of a element.
+.container {
+    width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .hide-tablet {
-        display: none;
-    }
+.container-wide {
 }
 
-@media screen and (min-width: 992px) and (max-width: 1259px) {
-    .hide-desktop {
-        display: none;
-    }
+.container-narrow {
+
 }
 
-@media screen and (min-width: 1260px) {
-    .hide-desktop-lg {
-        display: none;
-    }
-}

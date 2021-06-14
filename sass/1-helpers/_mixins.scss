@@ -8,18 +8,12 @@
 // *****************
 
 
-//Mixin that streamlines hiding certain elements by inputting values where it will be hidden between.
-@mixin hideElement ($min-size, $max-size) {
+//Mixin that streamlines hiding certain elements by inputting values where it will be hidden between(media quieries look messy).
+@mixin hide-element ($min-size, $max-size) {
     @media screen and (min-width:$min-size) and (max-width:$max-size) {
         display: none;
-        
     }
 }
-
-
-
-
-
 
 // *****************
 // Mixins copied in from various sites
