@@ -1,0 +1,44 @@
+/* Rules for sizing the icon. */
+/* line 10, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+/* line 11, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+/* line 12, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+/* line 13, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+/* line 16, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* line 17, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+/* line 20, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-light {
+  color: white;
+}
+
+/* line 21, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/2-tools/google-icons.scss */
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/*# sourceMappingURL=google-icons.css.map */

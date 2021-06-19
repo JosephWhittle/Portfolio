@@ -12,14 +12,18 @@ $indendence: #4C556B;
 $Razzmatazz: #E31B6D;
 $Ultramaine-Blue: #4361EE;
 $Carolina-Blue: #20A4F3;
+$white: #fff;
+$linkedin-blue:#2962ff;
+$github-grey: grey;
 
-// Descriptive colours 
 
-        // FOR EXAMPLE PRIMARY, SECONDARY, TERTAIRY, THEME, BASE ect
-$base-color: #c6538c;
+// Descriptive colours
+$primary-background-colour: $Raisin-Black;
+$primary-font-colour: $white;
+$colourful-font-colour: $Razzmatazz;
 
-$base-color: #c6538c;
-$border-dark: rgba($base-color, 0.88);
+//Just an example
+$border-dark: rgba($primary-background-colour, 0.88);
 
 
 // *****************
@@ -33,7 +37,7 @@ $semibold: 500;
 $bold: 700;
 
 // font stacks
-$sans-serif: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
+$raleway-font-stack: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
 
 
 // *****************
@@ -42,15 +46,15 @@ $sans-serif: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
 
 // Sass mixin media queries varibles
 $breakpoints: (
-    "phone":        400px,
-    "phone-wide":   480px,
-    "phablet":      560px,
-    "tablet-small": 640px,
+    "phablet":      576px,
     "tablet":       768px,
-    "tablet-wide":  1024px,
-    "desktop":      1248px,
-    "desktop-wide": 1440px
+    "desktop":      992px,
+    "desktop-wide": 1200px
 );
+
+
+// Just a filler cos sass needs all arguments filled, even when not used
+$var-filler-no-value:0;
 
 // For consistency on the margins of the static nav bar
 $nav-bar-width:10rem;

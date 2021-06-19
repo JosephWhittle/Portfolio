@@ -1,0 +1,29 @@
+/* base styles  */
+/* line 4, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/6-pages/-my-portfolio.scss */
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* line 9, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/6-pages/-my-portfolio.scss */
+body {
+  width: 100%;
+  height: auto;
+}
+
+/* line 14, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/6-pages/-my-portfolio.scss */
+h1, h2, h3, h4, h5 {
+  color: white;
+}
+
+/* line 19, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/6-pages/-my-portfolio.scss */
+p {
+  font-size: 1rem;
+}
+
+/* line 28, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/6-pages/-my-portfolio.scss */
+.container {
+  width: 100%;
+}
+
+/*# sourceMappingURL=-my-portfolio.css.map */

@@ -1,24 +1,48 @@
 // This file should contain reusable defined styles that can be throwin in where useful, clean up stylesheets and prevent non semantic html markeup (like ".float-left")
 // This is also helpul as you can name a mixin something much more concise and informative. (For example "smooth-transitions" instead of Transition:(all, 0.15s, ease-out,0s)).
 
-
-
 // *****************
 // Mixins written by yours truly
 // *****************
+// Mixin to streamline background image settings as they clutter up easily (These settuings are commomly the same)
+@mixin background-image-standards($image-location) {
+    background-image: url($image-location);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
-
-//Mixin that streamlines hiding certain elements by inputting values where it will be hidden between(media quieries look messy).
-@mixin hide-element ($min-size, $max-size) {
-    @media screen and (min-width:$min-size) and (max-width:$max-size) {
+// Mixin that streamlines hiding certain elements by inputting values where it will be hidden between(media queries look messy).
+@mixin hide-element ($first-size, $second-size) {
+    //Contained calculates between two values
+    @media screen and (min-width:$first-size) and (max-width:$second-size) {
         display: none;
     }
 }
 
+// Mixin that streamlines setting a margin value in a media query. 
+@mixin set-margin-in-bounds ($margin-value, $margin-direction, $first-size, $second-size) {
+    @media screen and (min-width:$first-size) and (max-width:$second-size) {
+        @if $margin-direction == left {
+            margin-left: $margin-value;
+        }
+        @if $margin-direction == right {
+            margin-right: $margin-value;
+        }
+        @if $margin-direction == up {
+            margin-up: $margin-value;
+        }
+        @if $margin-direction == down {
+            margin-down: $margin-value;
+        }
+    }
+}
+
+
+
 // *****************
 // Mixins copied in from various sites
 // *****************
-
 
 // Mixin that will include the fall back px declaration as well as the calculated rem value.
 @mixin fontSize($size) {

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "synscope-vertical-rhythm.css",
+	"sources": [
+		"../../sass/2-tools/synscope-vertical-rhythm.scss"
+	],
+	"sourcesContent": [
+		"/**\r\n * Vertical rhythm by Syncope\r\n * http://nowodzinski.pl/syncope\r\n */\r\n\r\n\r\n // Add each mixin into the base styles then override as and when desired\r\n\r\n@mixin h1-vr {\r\n\tfont-size: 3.38rem;\r\n\tline-height: 1.44rem;\r\n\tpadding-top: 0.389rem;\r\n\tmargin-bottom: 0.0926rem;\r\n}\r\n\r\n@mixin h2-vr {\r\n\tfont-size: 2.25rem;\r\n\tline-height: 1.44rem;\r\n\tpadding-top: 0.389rem;\r\n\tmargin-bottom: 0.333rem;\r\n}\r\n\r\n@mixin h3-vr {\r\n\tfont-size: 1.50rem;\r\n\tline-height: 1.08rem;\r\n\tpadding-top: 0.208rem;\r\n\tmargin-bottom: 0.875rem;\r\n}\r\n\r\n@mixin h4-vr {\r\n\tfont-size: 1.00rem;\r\n\tline-height: 1.63rem;\r\n\tpadding-top: 0.500rem;\r\n\tmargin-bottom: 1.13rem;\r\n}\r\n\r\n@mixin p-vr {\r\n\tfont-size: 1.00rem;\r\n\tline-height: 1.63rem;\r\n\tpadding-top: 0.500rem;\r\n\tmargin-bottom: 1.13rem;\r\n}\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA;;;GAGG"
+}

@@ -1,24 +1,57 @@
 
-.sidenav {
+.nav-bar {
+  @include hide-element(0px,768px);
     height: 100%;
-    width: 160px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
     overflow-x: hidden;
-    padding-top: 20px;
-  }
+    box-sizing: border-box;
+    background-color: $primary-background-colour;
+    border-right: 2px solid $colourful-font-colour;
+
+    #main-list {
+      li a {
+        display: block;
+        color: $primary-font-colour;
+        text-align: center;
+        font-size: large;
+        padding:10px;
+        margin-top:20px;
+        font-weight:normal;
+        border-bottom: 2px solid $primary-background-colour;
+        transition: border-color 0.2s linear;
   
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
+        &:hover {
+          border-bottom: 2px solid $colourful-font-colour;
+        }
+      } 
+    } 
+}
+
+//Styling for the logo in the top left
+#main-icon {   
+  width: 100%;
+  display: inline-block;
+  font-size: 4rem;
+  text-align: center;
+  color: $colourful-font-colour;
+  border-bottom: 2px solid $colourful-font-colour;
+}
+
+//styling for the contact me button on the nav list
+#contact-me-btn-styling {
+  border-top: 2px solid $colourful-font-colour;
+  border-bottom: 2px solid $colourful-font-colour !important;
   
-  .sidenav a:hover {
-    color: #f1f1f1;
+  &:hover {
+    background-color: $colourful-font-colour;
+    transition: background-color 0.2s linear;
   }
+}  
+
+
+
+  

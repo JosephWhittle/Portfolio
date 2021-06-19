@@ -1,0 +1,17 @@
+//This page only contains styling for the scrolling segments
+
+
+.scroll {
+    :first-child {
+        display: inline-block;
+        width: 100%;
+        font-size: larger;
+        font-weight: normal;
+        color: white;
+    }
+    :last-child {
+        color: white;
+        font-size: x-large;
+        text-shadow: 0px 0px 5px black;
+    }
+}

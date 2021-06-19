@@ -1,1 +1,14 @@
-//This partial should contain only ::selection styling
+//This partial should contain only ::selection styling, this can incluude hover styling as well
+
+.hover-background-linkedin {
+    &:hover {
+        background-color: $linkedin-blue;
+    }
+}
+
+.hover-background-github{
+    &:hover {
+        background-color: $github-grey;
+    }
+}
+

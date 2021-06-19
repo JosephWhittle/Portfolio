@@ -7,6 +7,9 @@
 @import '1-helpers/utility';
 
 // 2 - Tools
+@import '2-tools/google-icons';
+@import '2-tools/synscope-vertical-rhythm';
+@import '2-tools/typewriter-effect';
 
 // 3 - Basics
 @import '3-basics/base';
@@ -18,10 +21,23 @@
 @import '3-basics/typography';
 
 // 4 - Layout
-@import '4-layout/mainarea';
-@import '4-layout/sidenav';
+@import '4-layout/main-area';
+@import '4-layout/nav-bar';
+@import '4-layout/landing-page';
+@import '4-layout/project-area';
 
 // 5 - modules
+@import '5-modules/about-blocks';
+@import '5-modules/contact-section';
+@import '5-modules/example-blocks';
 @import '5-modules/project-card';
+@import '5-modules/scroll-section';
+@import '5-modules/scs-scheme-info-blocks';
+@import '5-modules/social-logos';
 
 // 6 - pages
+@import '6-pages/about-me';
+@import '6-pages/coding-examples';
+@import '6-pages/my-portfolio';
+@import '6-pages/scs-scheme';
+@import '6-pages/index';

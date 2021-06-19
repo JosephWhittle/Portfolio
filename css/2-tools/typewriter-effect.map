@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "typewriter-effect.css",
+	"sources": [
+		"../../sass/2-tools/typewriter-effect.scss"
+	],
+	"sourcesContent": [
+		"// This file contains the classes for the type writer effect\r\n\r\n\r\n.typewriter h1 {\r\n  overflow: hidden; /* Ensures the content is not revealed until the animation */\r\n  border-right: .15em solid orange; /* The typwriter cursor */\r\n  white-space: nowrap; /* Keeps the content on a single line */\r\n  margin: 0 auto; /* Gives that scrolling effect as the typing happens */\r\n  letter-spacing: .15em; /* Adjust as needed */\r\n  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;\r\n}\r\n\r\n/* The typing effect */\r\n@keyframes typing {\r\n  from { width: 0 }\r\n  to { width: 100% }\r\n}\r\n\r\n/* The typewriter cursor effect */\r\n@keyframes blink-caret {\r\n  from, to { border-color: transparent }\r\n  50% { border-color: orange; }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAGA,AAAA,WAAW,CAAC,EAAE,CAAC;EACb,QAAQ,EAAE,MAAM;EAAE,6DAA6D;EAC/E,YAAY,EAAE,kBAAkB;EAAE,0BAA0B;EAC5D,WAAW,EAAE,MAAM;EAAE,wCAAwC;EAC7D,MAAM,EAAE,MAAM;EAAE,uDAAuD;EACvE,cAAc,EAAE,KAAK;EAAE,sBAAsB;EAC7C,SAAS,EAAE,MAAM,CAAC,IAAI,CAAC,cAAc,EAAE,WAAW,CAAC,KAAI,CAAC,QAAQ,CAAC,QAAQ;CAC1E;;AAED,uBAAuB;AACvB,UAAU,CAAV,MAAU;EACR,IAAI;IAAG,KAAK,EAAE,CAAE;;EAChB,EAAE;IAAG,KAAK,EAAE,IAAK;;;;AAGnB,kCAAkC;AAClC,UAAU,CAAV,WAAU;EACR,IAAI,EAAE,EAAE;IAAG,YAAY,EAAE,WAAY;;EACrC,GAAG;IAAG,YAAY,EAAE,MAAM"
+}

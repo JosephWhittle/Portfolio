@@ -1,0 +1,43 @@
+/**
+ * Vertical rhythm by Syncope
+ * http://nowodzinski.pl/syncope
+ */
+
+
+ // Add each mixin into the base styles then override as and when desired
+
+@mixin h1-vr {
+	font-size: 3.38rem;
+	line-height: 1.44rem;
+	padding-top: 0.389rem;
+	margin-bottom: 0.0926rem;
+}
+
+@mixin h2-vr {
+	font-size: 2.25rem;
+	line-height: 1.44rem;
+	padding-top: 0.389rem;
+	margin-bottom: 0.333rem;
+}
+
+@mixin h3-vr {
+	font-size: 1.50rem;
+	line-height: 1.08rem;
+	padding-top: 0.208rem;
+	margin-bottom: 0.875rem;
+}
+
+@mixin h4-vr {
+	font-size: 1.00rem;
+	line-height: 1.63rem;
+	padding-top: 0.500rem;
+	margin-bottom: 1.13rem;
+}
+
+@mixin p-vr {
+	font-size: 1.00rem;
+	line-height: 1.63rem;
+	padding-top: 0.500rem;
+	margin-bottom: 1.13rem;
+}
+

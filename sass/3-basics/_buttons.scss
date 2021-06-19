@@ -2,7 +2,25 @@
 // using a component maybe
 
 
-.btn {
+.burger-btn {
+    @include hide-element(768px, 6000px);
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    background: rgba(10, 10, 10, 0.884);
+    border-radius: 50%;
+    position: fixed;
+    margin-top: 20px;
 
-    
+    div {
+        margin-top: 17px;
+        opacity: 0.7;
+
+        div {
+            width: 50px;
+            height: 5px;
+            background-color: $colourful-font-colour;
+            margin: 10px 10px 10px 10px;
+        }
+    }
 }

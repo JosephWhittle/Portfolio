@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "-my-portfolio.css",
+	"sources": [
+		"../../sass/6-pages/-my-portfolio.scss"
+	],
+	"sourcesContent": [
+		"/* base styles  */\r\n\r\n// Base selectors \r\nhtml {\r\n    box-sizing: border-box;\r\n    font-size: 100%\r\n}\r\n\r\nbody {\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n\r\nh1, h2, h3, h4, h5 {\r\n    color:white;\r\n\r\n}\r\n\r\np {\r\n    font-size: 1rem;\r\n}\r\n\r\n\r\n\r\n// Base customs\r\n\r\n// Containers are good to set the max width, width, padding and marings of a element.\r\n.container {\r\n    width: 100%;\r\n}\r\n\r\n.container-wide {\r\n}\r\n\r\n.container-narrow {\r\n\r\n}\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,kBAAkB;;AAGlB,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,UAAU;EACtB,SAAS,EAAE,IACf;CAAC;;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf;;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EACf,KAAK,EAAC,KAAK;CAEd;;;AAED,AAAA,CAAC,CAAC;EACE,SAAS,EAAE,IAAI;CAClB;;;AAOD,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;CACd"
+}
