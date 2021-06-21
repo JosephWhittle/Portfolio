@@ -10,27 +10,25 @@ html {
 body {
     height: auto;
     width: auto;
+    color: white;
     font-family: $raleway-font-stack;
+
 }
 
 h1 {
     @include h1-vr;
-    color: white;
 }
 
 h2 {
     @include h2-vr;
-    color: white;
 }
 
 h3 {
     @include h3-vr;
-    color: white;
 }
 
 h4 {
     @include h4-vr;
-    color: white;
 }
 
 p {
@@ -43,11 +41,43 @@ img {
 }
 
 
-// Base customs
 
-//*** Containers are good to set the max width, width, padding and marings of a element
-
-.container-standard {
+// Margin wrappers
+.horizontal-margins {
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.vertical-margins {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.vertical-margins-top-only {
+    margin-top: 20px;
+}
+.vertical-margins-bottom-only {
+    margin-bottom: 20px;
+}
+
+
+// width containers 
+
+// The following container will be the maximum width of any element of the site, at any viewport
+.horizontal-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width:map-get($breakpoints, "phablet")) {
+        max-width: 100px !important;
+    }
+    @media screen and (min-width:map-get($breakpoints, "tablet")) {
+        max-width: 300px !important;
+    }
+    @media screen and (min-width:map-get($breakpoints, "desktop")) {
+        max-width: 1000px !important;
+    }
+    @media screen and (min-width:map-get($breakpoints, "desktop-wide")) {
+        max-width: 1500px !important;
+    }
 }

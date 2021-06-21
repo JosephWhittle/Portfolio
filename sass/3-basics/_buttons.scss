@@ -2,6 +2,25 @@
 // using a component maybe
 
 
+
+.btn {
+    display: block;
+    text-align: center;
+    font-size: large;
+    padding: 10px;
+    font-weight: normal;
+    border-bottom: 2px solid #252934;
+    border: 2px solid #E31B6D;
+    background-color: rgba(128, 0, 128, 0);
+    transition: background-color 0.2s linear;
+    border-radius: 10px;
+    color:white;
+    &:hover {
+        background-color: $colourful-font-colour;
+    }
+}
+
+
 .burger-btn {
     @include hide-element(768px, 6000px);
     cursor: pointer;
@@ -11,6 +30,7 @@
     border-radius: 50%;
     position: fixed;
     margin-top: 20px;
+    z-index: 3;
 
     div {
         margin-top: 17px;

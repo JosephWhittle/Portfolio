@@ -1,0 +1,15 @@
+// This file should contain styling for the long titled area at the top of some pages
+
+.headed-title {
+    width: 100%;
+    height: 77px;
+    vertical-align:middle;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 2px solid #E31B6D;
+    //@include background-image-standards("/images/pawel-czerwinski-lDtmU_ABtcU-unsplash.jpg");
+
+    h1 {
+        line-height: 4rem;
+    }
+}

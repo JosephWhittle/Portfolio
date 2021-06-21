@@ -1,48 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!--Meta tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">   
+
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1>   
 
     <!--favicon/page name-->
     <title>Portfolio | Joseph Whittle</title>
-    <meta name="description" content="Personal Portfolio represnting web development work by Joseph Whittle"><meta name="author" content="">
-    <link rel="shortcut icon" href="/images/NetmattersLogos/NM-ICO-FAV.ico">
-        
-    <!--API's-->
+    <meta name=" description" content="Personal Portfolio represnting web development work by Joseph Whittle">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/images/NetmattersLogos/NM-ICO-FAV.ico">
 
-    <!--Stylesheets/links-->
-    <link rel="stylesheet" href="/css/main.css">
+  <!--API's-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Stylesheets/links-->
+  <link rel="stylesheet" href="/css/main.css">
 
 
-  </head>
-  <body>
+</head>
 
+<body>
+
+  <div id="page-container">
 
     <!--The side bar-->
-    <nav class="sidenav">
-      <a href="/pages/about-me.html">About Me</a>
-      <a href="/index.html">My Portfolio</a>
-      <a href="/pages/coding-examples.html">Coding Examples</a>
-      <a href="/pages/scs-scheme.html">SCS Scheme</a>
-      <a href="/index.html">Contact Me</a>
+    <nav class="nav-bar">
+      <span id="main-icon">
+        <a href=".">
+          JW
+        </a>
+      </span>
+      <ul id="main-list">
+        <li>
+          <a href="/pages/about-me.html">About Me</a>
+        </li>
+        <li>
+          <a href="/index.html">My Portfolio</a>
+        </li>
+        <li>
+          <a href="/pages/coding-examples.html">Coding Examples</a>
+        </li>
+        <li>
+          <a href="/pages/scs-scheme.html">SCS Scheme</a>
+        </li>
+        <li>
+          <a href="/index.html#contact-section" id="contact-me-btn-styling">Contact Me</a>
+        </li>
+      </ul>
+      <ul id="social-icon-list">
+        <li class="social-icon hover-background-linkedin">
+          <a>
+            <img src="/images/icon-linkedin.png" alt="Linked-In button">
+          </a>
+        </li>
+        <li class="social-icon hover-background-github">
+          <a>
+            <img src="/images/icon-github.png" alt="github button">
+          </a>
+        </li>
+      </ul>
     </nav>
-
-
 
     <!--The main section of the page-->
     <div id="main">
-      <div class="splash-page">
+      <!--Fixed Burger Button-->
+      <div class="burger-btn">
+        <div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+
+      <!--Landing Page-->
+      <div class="headed-title">
         <h1>
-          <Strong>scs scheme
-        </h1> 
+          SCS Scheme
+        </h1>
+      </div>
+
+      <!--INSERT PAGE CONTENT BELOW-->
+      <div id="scs-scheme" class="vertical-margins horizontal-margins horizontal-container">
+
+        <div class="scs-scheme-block">
+          <h2>Hi, I'm Joe.</h2>
+          <h3>Say something fancy about being good at something</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book.
+          </p>
+        </div>
+
+        <div class="scs-scheme-block">
+          <div>
+            <img src="/images/netmatters-logo.png" alt="">
+          </div>
+          <h2>Hi, I'm Joe.</h2>
+          <h3>Say something fancy about being good at something</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book.
+          </p>
+        </div>
+
+        <div class="scs-scheme-block">
+          <div>
+            <img src="/images/netmatters-logo.png" alt="">
+          </div>
+          <h2>Hi, I'm Joe.</h2>
+          <h3>Say something fancy about being good at something</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book.
+          </p>
+        </div>
       </div>
 
 
 
 
+
+
+
+      <!--Scroll section at the bottom-->
+      <div>
+        <span class="scroll hover-image-highlight">
+          <a href="#main">
+            <span class="arrow material-icons">arrow_upward</span>
+            <span class="text">Scroll Up</span>
+          </a>
+        </span>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

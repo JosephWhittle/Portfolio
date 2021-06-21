@@ -21,10 +21,13 @@
 @import '3-basics/typography';
 
 // 4 - Layout
+@import '4-layout/about-me-area';
+@import '4-layout/headed-title';
+@import '4-layout/landing-page';
 @import '4-layout/main-area';
 @import '4-layout/nav-bar';
-@import '4-layout/landing-page';
 @import '4-layout/project-area';
+@import '4-layout/scs-scheme-area';
 
 // 5 - modules
 @import '5-modules/about-blocks';
