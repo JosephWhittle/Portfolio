@@ -1,20 +1,18 @@
 //This partial should contain only ::selection styling, this can incluude hover styling as well
 
-
 // custom selections
 // For the social media buttons on the nav bar
 .hover-background-linkedin {
     &:hover {
-        background-color: $linkedin-blue;
+        background-color: white;
     }
 }
 
 .hover-background-github{
     &:hover {
-        background-color: $github-grey;
+        background-color: white;
     }
 }
-
 
 // For any images that might need a little more interactivity 
 .hover-image-highlight {

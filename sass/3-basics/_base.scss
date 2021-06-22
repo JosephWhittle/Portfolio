@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     @include h2-vr;
+    line-height: 2.25rem;;
 }
 
 h3 {
@@ -75,7 +76,11 @@ img {
         max-width: map-get($breakpoints, "desktop") - $nav-bar-width !important;
     }
     @media screen and (min-width:map-get($breakpoints, "desktop-wide")) {
-        max-width: map-get($breakpoints, "desktop-wide") - $nav-bar-width!important;
+        max-width: map-get($breakpoints, "desktop-wide") - $nav-bar-width !important;
+    }
+
+    @media screen and (min-width:map-get($breakpoints, "beyond-wide")) {
+        max-width: map-get($breakpoints, "beyond-wide") - $nav-bar-width !important;
     }
 }
 
