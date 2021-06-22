@@ -5,6 +5,8 @@
     display: flex;
     justify-content:space-evenly;
 
+
+
 }
 
 .social-icon {
@@ -14,6 +16,12 @@
     width: 45px;
     height: 45px;
     border-radius: 100%;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        margin-left: 25px;
+        margin-right: 25px;
+
+    }
 
     img {
         width:100%;

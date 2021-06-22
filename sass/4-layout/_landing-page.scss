@@ -9,16 +9,27 @@
   text-align: center;
   justify-content: center;
 
+
+
     h1 {
       margin-top: auto;
       margin-left: auto;
       margin-right: auto;
       line-height: normal;
       max-height: 128px;
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        margin-top: 0;
+      }
+    
     }
 
     .scroll {
       margin-top: auto;
+
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        margin-bottom: auto;
+      }
     }
 
   }
