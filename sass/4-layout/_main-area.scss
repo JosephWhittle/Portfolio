@@ -2,7 +2,7 @@
 
 //The entire page seperate from the nav bar
 #main {  
-  margin-left:200px;
+  margin-left:$nav-bar-width;
   overflow-x: hidden;
   background-color: $primary-background-colour;
   @include set-margin-in-bounds(0px, left, 0px, 768px);

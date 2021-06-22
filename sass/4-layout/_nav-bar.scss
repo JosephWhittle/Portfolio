@@ -2,7 +2,7 @@
 .nav-bar {
   @include hide-element(0px,768px);
     height: 100%;
-    width: 200px;
+    width: $nav-bar-width;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -11,6 +11,7 @@
     box-sizing: border-box;
     background-color: $primary-background-colour;
     border-right: 2px solid $colourful-font-colour;
+
 
     #main-list {
       li a {

@@ -3,6 +3,7 @@
 #contact-section {
     display: flex;
     flex-wrap: wrap;
+    
     .contact-info {
         width: 100%;
     }
@@ -10,7 +11,7 @@
     .contact-form {
         width: 100%;
 
-        input {
+        input, textarea {
             width: 100%;
             padding: 10px;
             border-radius: 5px;
@@ -19,6 +20,12 @@
             background-color: #dadbdd;
             margin-bottom: 10px;
         }
+
+        .message-box {
+            resize: none;
+            min-height: 150px;
+        }
+
     }
 }
 

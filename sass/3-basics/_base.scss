@@ -68,16 +68,17 @@ img {
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:map-get($breakpoints, "phablet")) {
-        max-width: 100px !important;
-    }
     @media screen and (min-width:map-get($breakpoints, "tablet")) {
-        max-width: 300px !important;
+        max-width: map-get($breakpoints, "tablet") - $nav-bar-width !important;
     }
     @media screen and (min-width:map-get($breakpoints, "desktop")) {
-        max-width: 1000px !important;
+        max-width: map-get($breakpoints, "desktop") - $nav-bar-width !important;
     }
     @media screen and (min-width:map-get($breakpoints, "desktop-wide")) {
-        max-width: 1500px !important;
+        max-width: map-get($breakpoints, "desktop-wide") - $nav-bar-width!important;
     }
 }
+
+
+
+

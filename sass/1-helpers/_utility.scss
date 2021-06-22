@@ -8,3 +8,31 @@
 
 
 
+
+// *****************
+// Utility classes setting splits for tile sizes
+// *****************
+
+// Classes for size changes, 
+.set-width-full {     
+    max-width: 100%;
+}
+
+.set-width-half { // splits in half, the 5% is for easy margins
+    @media screen and (min-width:map-get($breakpoints, "tablet")) {
+        max-width: 45%;
+    }
+}
+
+.set-width-half-2 { // same as above except starts a litte wider
+    @media screen and (min-width:map-get($breakpoints, "desktop")) {
+        max-width: 45%;
+    }
+}
+
+.set-width-thirds {
+    @media screen and (min-width:map-get($breakpoints, "desktop-wide")) {
+        max-width: 30%;
+    }
+}
+

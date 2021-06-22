@@ -1,36 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!--Meta tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1>   
 
-    <!--favicon/page name-->
-    <title>Portfolio | Joseph Whittle</title>
-    <meta name="description" content="Personal Portfolio represnting web development work by Joseph Whittle"><meta name="author" content="">
-    <link rel="shortcut icon" href="/images/NetmattersLogos/NM-ICO-FAV.ico">
-        
-    <!--API's-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1>   
 
-    <!--Stylesheets/links-->
-    <link rel="stylesheet" href="/css/main.css">
+    
+  <!--favicon/page name-->
+  <title>Portfolio | Joseph Whittle</title>
+  <meta name=" description" content="Personal Portfolio represnting web development work by Joseph Whittle">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/images/NetmattersLogos/NM-ICO-FAV.ico">
+
+  <!--API's-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Stylesheets/links-->
+  <link rel="stylesheet" href="/css/main.css">
 
 
-  </head>
-  <body>
+</head>
 
-    <div id="page-container">
+<body>
+
+  <div id="page-container">
+    <!--Not sure this needs to be there-->
 
     <!--The side bar-->
-    <nav class="nav-bar">
-        <span id="main-icon">
-          <a href="/index.html">
+    <nav class="nav-bar set-nav-bar">
+      <span id="main-icon">
+        <a href="/index.html">
           JW
         </a>
-        </span>
+      </span>
       <ul id="main-list">
         <li>
           <a href="/pages/about-me.html">About Me</a>
@@ -56,130 +60,157 @@
         </li>
         <li class="social-icon hover-background-github">
           <a>
-            <img src="/images/icon-github.png" alt="github button">    
-          </a>  
+            <img src="/images/icon-github.png" alt="github button">
+          </a>
         </li>
       </ul>
     </nav>
 
-
+    <!--Fixed Burger Button-->
+      <button type="button" class="burger-btn ">
+        <span>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </button>
 
     <!--The main section of the page-->
-    <div id="main">      
-      <!--Fixed Burger Button-->
-      <div class="burger-btn">
-        <div>
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </div>
+    <div id="main" class="set-main-page">
 
       <!--Landing Page-->
       <div class="landing-page">
         <h1>
           My Name is Joseph Whittle
-          <br/>
+          <br />
           I'm a Web Developer
-        </h1>     
+        </h1>
+
         <!--Scroll on the landing page-->
-          <span class="scroll hover-image-highlight" >
-            <a href="#project-area">            
-              <span class="text">Scroll Down</span>
-              <span class="arrow material-icons">arrow_downward</span>
-            </a>
-          </span>
-      </div>
-
-      <!--Project cards-->
-      <div id="project-area" class="vertical-margins horizontal-margins horizontal-container">
-        <div class="card thirds-size">
-          <div class="img-area hover-image-highlight">
-            <img src="/images/ColourSchemePortfolio.png" alt="">
-          </div>
-          <div class="description-area">
-            <h2>HTML/JS/PHP Reflection</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-            </p>
-          </div>
-          <div class="view-projects">
-            <a href="">
-              <span>
-                View Project
-              </span>
-            </a>
-            <span class="material-icons">arrow_forward</span>
-          </div>
-        </div>
-        <div class="card thirds-size">
-          <div class="img-area hover-image-highlight">
-            <img src="/images/ColourSchemePortfolio.png" alt="">
-          </div>
-          <div class="description-area">
-            <h2>HTML/JS/PHP Reflection</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-            </p>
-          </div>
-          <div class="view-projects">
-            <a href="">
-              <span>
-                View Project
-              </span>
-          </a>
-            <span class="material-icons">arrow_forward</span>
-          </div>
-        </div>
-        <div class="card thirds-size">
-          <div class="img-area hover-image-highlight">
-            <img src="/images/ColourSchemePortfolio.png" alt="">
-          </div>
-          <div class="description-area">
-            <h2>HTML/JS/PHP Reflection</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-            </p>
-          </div>
-          <div class="view-projects">
-            <a href="">
-              <span>
-                View Project
-              </span>
-            </a>
-            <span class="material-icons">arrow_forward</span>
-          </div>
-        </div>
-      </div>
-
-      <!--The contact section-->
-      <div id="contact-section" class="horizontal-margins horizontal-container horizontal-container">
-        <div class="contact-info">
-          <h2>
-            Get In Touch
-          </h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
-          </p>
-        </div>
-        <form class="contact-form">
-          <fieldset>
-            <input class="hello" placeholder="First Name" type="text">
-            <input class="hello" placeholder="Last Name" type="text">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Email Address" type="text">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Subject" type="text">
-          </fieldset>
-          <fieldset>
-            <input placeholder="Message" type="text">
-          </fieldset>
-          <button class="btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-        </fieldset>
-        </form>
-      </div>
-       <!--Scroll section at the bottom-->
-       <div>
         <span class="scroll hover-image-highlight">
-          <a href="#main"> 
+          <a href="#project-area">
+            <span class="text">Scroll Down</span>
+            <span class="arrow material-icons">arrow_downward</span>
+          </a>
+        </span>
+      </div>
+
+      <div class="horizontal-container">
+
+        <!--Project cards-->
+        <div id="project-area" class="vertical-margins horizontal-margins">
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <div class="img-area hover-image-highlight">
+              <img src="/images/ColourSchemePortfolio.png" alt="">
+            </div>
+            <div class="description-area">
+              <h2>HTML/JS/PHP Reflection</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+            <div class="view-projects">
+              <a href="">
+                <span>
+                  View Project
+                </span>
+              </a>
+              <span class="material-icons">arrow_forward</span>
+            </div>
+          </div>
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <div class="img-area hover-image-highlight">
+              <img src="/images/ColourSchemePortfolio.png" alt="">
+            </div>
+            <div class="description-area">
+              <h2>HTML/JS/PHP Reflection</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+            <div class="view-projects">
+              <a href="">
+                <span>
+                  View Project
+                </span>
+              </a>
+              <span class="material-icons">arrow_forward</span>
+            </div>
+          </div>
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <div class="img-area hover-image-highlight">
+              <img src="/images/ColourSchemePortfolio.png" alt="">
+            </div>
+            <div class="description-area">
+              <h2>HTML/JS/PHP Reflection</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+            <div class="view-projects">
+              <a href="">
+                <span>
+                  View Project
+                </span>
+              </a>
+              <span class="material-icons">arrow_forward</span>
+            </div>
+          </div>
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <div class="img-area hover-image-highlight">
+              <img src="/images/ColourSchemePortfolio.png" alt="">
+            </div>
+            <div class="description-area">
+              <h2>HTML/JS/PHP Reflection</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's.
+              </p>
+            </div>
+            <div class="view-projects">
+              <a href="">
+                <span>
+                  View Project
+                </span>
+              </a>
+              <span class="material-icons">arrow_forward</span>
+            </div>
+          </div>
+        </div>
+
+        <!--The contact section-->
+        <div id="contact-section" class="horizontal-margins">
+          <div class="contact-info set-width-half-2">
+            <h2>
+              Get In Touch
+            </h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's.
+            </p>
+          </div>
+          <form class="contact-form set-width-half-2">
+            <fieldset>
+              <input class="hello" placeholder="First Name" type="text">
+              <input class="hello" placeholder="Last Name" type="text">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Email Address" type="text">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Subject" type="text">
+            </fieldset>
+            <fieldset>
+              <textarea class="message-box" placeholder="Message" type="text">Message</textarea>
+            </fieldset>
+            <button class="btn" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <!--Scroll section at the bottom-->
+      <div>
+        <span class="scroll hover-image-highlight">
+          <a href="#main">
             <span class="arrow material-icons">arrow_upward</span>
             <span class="text">Scroll Up</span>
           </a>
@@ -187,5 +218,6 @@
       </div>
     </div>
   </div>
-  </body>
+</body>
+
 </html>
