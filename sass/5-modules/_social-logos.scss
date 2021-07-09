@@ -4,9 +4,6 @@
 #social-icon-list {
     display: flex;
     justify-content:space-evenly;
-
-
-
 }
 
 .social-icon {
@@ -23,11 +20,20 @@
 
     }
 
+    //Both ways of incoprating icons below are valid so might as well keep them just in case
+    //If you use an image this will style the image
     img {
         width:100%;
         height: 100%;
         color: $colourful-font-colour;
     }
+
+    i {
+        font-size: 3rem;
+    }
+
+    //If you use an icon with <i> then this will style the icon
+
 }
 
 

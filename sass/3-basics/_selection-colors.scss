@@ -3,14 +3,14 @@
 // custom selections
 // For the social media buttons on the nav bar
 .hover-background-linkedin {
-    &:hover {
-        background-color: white;
+    i:hover {
+        color: $linkedin-blue;
     }
 }
 
 .hover-background-github{
-    &:hover {
-        background-color: white;
+    i:hover {
+        color: $github-grey;
     }
 }
 

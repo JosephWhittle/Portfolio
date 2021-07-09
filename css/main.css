@@ -326,13 +326,13 @@ a {
 }
 
 /* line 6, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_selection-colors.scss */
-.hover-background-linkedin:hover {
-  background-color: white;
+.hover-background-linkedin i:hover {
+  color: #2962ff;
 }
 
 /* line 12, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_selection-colors.scss */
-.hover-background-github:hover {
-  background-color: white;
+.hover-background-github i:hover {
+  color: grey;
 }
 
 /* line 19, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/3-basics/_selection-colors.scss */
@@ -646,7 +646,7 @@ a {
   justify-content: space-evenly;
 }
 
-/* line 12, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
+/* line 9, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
 .social-icon {
   display: inline-block;
   text-align: center;
@@ -657,18 +657,23 @@ a {
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  /* line 12, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
+  /* line 9, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
   .social-icon {
     margin-left: 25px;
     margin-right: 25px;
   }
 }
 
-/* line 26, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
+/* line 25, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
 .social-icon img {
   width: 100%;
   height: 100%;
   color: #E31B6D;
+}
+
+/* line 31, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_social-logos.scss */
+.social-icon i {
+  font-size: 3rem;
 }
 
 /* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_scs-scheme-sections.scss */
