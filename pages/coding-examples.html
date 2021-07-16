@@ -1,36 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!--Meta tags-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
 
-    <!--favicon/page name-->
-    <title>Portfolio | Joseph Whittle</title>
-    <meta name="description" content="Personal Portfolio represnting web development work by Joseph Whittle"><meta name="author" content="">
-    <link rel="shortcut icon" href="/images/favicon-32x32-pink.png">
-        
-    <!--API's-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+<head>
+  <!--Meta tags-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Stylesheets/links-->
-    <link rel="stylesheet" href="/css/main.css">
+  <!--favicon/page name-->
+  <title>Portfolio | Joseph Whittle</title>
+  <meta name="description" content="Personal Portfolio represnting web development work by Joseph Whittle">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/images/favicon-32x32-pink.png">
+
+  <!--API's-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/604f1ed31d.js" crossorigin="anonymous"></script>
 
 
-  </head>
-  <body>
+  <!--Stylesheets/links-->
+  <link rel="stylesheet" href="/css/main.css">
 
-    <div id="page-container">
+
+</head>
+
+<body>
+
+  <div id="page-container">
 
     <!--The side bar-->
     <nav class="nav-bar">
-        <span id="main-icon">
-          <a href="/index.html">
+      <span id="main-icon">
+        <a href="/index.html">
           JW
         </a>
-        </span>
+      </span>
       <ul id="main-list">
         <li>
           <a href="/pages/about-me.html">About Me</a>
@@ -49,19 +53,19 @@
         </li>
       </ul>
       <ul id="social-icon-list">
-        <li class="social-icon hover-background-linkedin">
-          <a>
-            <img src="/images/icon-linkedin-blue.png" alt="Linked-In button">
+        <li class="social-icon hover-background-github">
+          <a href="https://github.com/JosephWhittle">
+            <i class="fab fa-github-square"></i>
           </a>
         </li>
-        <li class="social-icon hover-background-github">
-          <a>
-            <img src="/images/icon-github.png" alt="github button">    
-          </a>  
+        <li class="social-icon hover-background-linkedin">
+          <a href="https://www.linkedin.com/in/josephwhittle/">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
       </ul>
     </nav>
-    
+
     <!--Fixed Burger Button-->
     <button type="button" class="burger-btn ">
       <span>
@@ -72,36 +76,47 @@
     </button>
 
     <!--The main section of the page-->
-    <div id="main">      
+    <div id="main">
 
       <!--Title area-->
       <div class="headed-title">
         <h1>
           Coding Examples
-        </h1>     
+        </h1>
       </div>
 
       <div class="horizontal-container">
 
-      <!--INSERT PAGE CONTENT BELOW-->
-      <div id="about-me">
-        <div class="about-block">
-          <h2 style="padding-top: 100px; padding-bottom: 900px;">Coming soon.</h2>
+        <!--INSERT PAGE CONTENT BELOW-->
+        <div id="coding-examples" class="vertical-margins horizontal-margins">
+          <div class="example-block">
+            <h2>HTML/CSS Reflection</h2>
+            <pre>
+              <code>
+                Once javascript for the HTML reflection is done that will be placed here
+              </code>
+            </pre>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+            <div class="view-projects">
+              <a href="">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
         </div>
+
       </div>
-
-  
-
-
-
-
-
-      
-      </div>
-       <!--Scroll section at the bottom-->
-       <div>
+      <!--Scroll section at the bottom-->
+      <div>
         <span class="scroll hover-image-highlight">
-          <a href="#main"> 
+          <a href="#main">
             <span class="arrow material-icons">arrow_upward</span>
             <span class="text">Scroll Up</span>
           </a>
@@ -109,5 +124,5 @@
       </div>
     </div>
   </div>
-  </body>
+</body>
 </html>

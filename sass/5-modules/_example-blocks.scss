@@ -1,0 +1,28 @@
+
+
+
+//This is the contained blocks of coding examples
+.example-block {
+    margin-top: 10vh;
+
+    // The title of the block
+    h2 {
+
+    }
+
+    //the code of the block, atm you are using the <br> method to 
+    //seperate the lines of code
+    pre code {
+        background-color: rgba(0, 0, 0, 0.158);
+        box-shadow: 0px 0px 8px 0px #0000006e;
+        display: block;
+        white-space: normal;
+        max-width: fit-content;
+        padding: 20px;
+    }
+
+    //Description
+    p {
+
+    }
+}

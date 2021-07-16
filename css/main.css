@@ -359,6 +359,15 @@ a {
   max-width: 100%;
 }
 
+/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/4-layout/_coding-examples-area.scss */
+#coding-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 /* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/4-layout/_headed-title.scss */
 .headed-title {
   width: 100%;
@@ -509,23 +518,23 @@ a {
   max-width: 100%;
 }
 
-/* line 4, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 3, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block {
   margin-top: 10vh;
 }
 
-/* line 7, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 6, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block h2 {
   text-align: center;
   margin-top: 20px;
 }
 
-/* line 16, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 15, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block p {
   margin-top: 20px;
 }
 
-/* line 20, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 19, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block div {
   width: 300px;
   height: 300px;
@@ -536,12 +545,12 @@ a {
   margin-top: 20px;
 }
 
-/* line 29, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 28, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block div img {
   border-radius: 100%;
 }
 
-/* line 34, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
+/* line 33, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_about-blocks.scss */
 .about-block ul {
   margin-bottom: 200px;
   font-size: x-large;
@@ -583,6 +592,21 @@ a {
   min-height: 150px;
 }
 
+/* line 5, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_example-blocks.scss */
+.example-block {
+  margin-top: 10vh;
+}
+
+/* line 15, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_example-blocks.scss */
+.example-block pre code {
+  background-color: rgba(0, 0, 0, 0.158);
+  box-shadow: 0px 0px 8px 0px #0000006e;
+  display: block;
+  white-space: normal;
+  max-width: fit-content;
+  padding: 20px;
+}
+
 /* line 5, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
 .card {
   width: 100%;
@@ -608,13 +632,13 @@ a {
   z-index: 1;
 }
 
-/* line 39, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
-.card .view-projects :first-child {
+/* line 5, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-links.scss */
+.view-projects :first-child {
   vertical-align: middle;
 }
 
-/* line 42, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-card.scss */
-.card .view-projects :last-child {
+/* line 8, ../../Users/Joewh/Documents/GitHub/Portfolio/sass/5-modules/_project-links.scss */
+.view-projects :last-child {
   vertical-align: middle;
 }
 
