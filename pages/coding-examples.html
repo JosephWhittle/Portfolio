@@ -93,13 +93,27 @@
             <h2>HTML/CSS Reflection</h2>
             <pre>
               <code>
-                Once javascript for the HTML reflection is done that will be placed here
+                //the main text of the cookie<br>
+                .cookie-body {<br>
+                    padding: 20px;<br>
+                    p:First-child {<br>
+                        line-height: 1.875rem;<br>
+                        margin-bottom: 25px;<br>
+                        color: #666;<br>
+                        font-size: 1rem;<br>
+                    }<br>
+                    p:last-child {<br>
+                        line-height: 1.875rem;<br>
+                        color: #666;<br>
+                        font-size: 1rem;<br>
+                    }<br>
+                }<br>
               </code>
             </pre>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              The above code is SASS written to assign some styling to the the cookies popup, it does this by using the "last child" and "first child"
+              selectors and then by slightly carefully laying out the html this is quick and efficiant way to add some styling.
+               
             </p>
             <div class="view-projects">
               <a href="">
@@ -108,6 +122,8 @@
                 </span>
                 <span class="material-icons">arrow_forward</span>
               </a>
+            </div>
+            <div class="">
             </div>
           </div>
           <div class="example-block">
@@ -134,6 +150,42 @@
               columns.<br>
               - Lastly the subquery returns the movies table but filtered using the ratings table, returning how
               highlighy rated they are and esnuring it okay only returns well rated films.<br>
+            </p>
+            <div class="view-projects">
+              <a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/index.php">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="example-block">
+            <h2>Image Linker</h2>
+            <pre>
+              <code>
+                if(emailObjects.length != 0) {<br>
+                  for (let i = 0; i < emailObjects.length; i++) {<br>
+                      if(emailObjects[i].email == currentlyInputEmail) <br>{
+                          //found email<br>
+                          console.log("found " + emailObjects[i].email)<br>
+                          doesEmailExist = true;<br>
+                          foundEmailObjIndex = i;<br>
+                      }<br>
+                      else {<br>
+                          //finished looping and not found it<br>
+                          doesEmailExist = false;<br>
+                      }<br>
+                  }<br>
+              }<br>
+              </code>
+            </pre>
+            <p>
+              This section of code is taken from a project that grabs images from Lorem Picsum and then displays them as a grid on the page. You can then
+              assign them to an email address and return all the images assigned to that email address. The snippet of code above contains the logic that handles iterating throughout the array that handles all the emails+assocated images and checks whether an email already exists in the storage. 
+              
+              The emailObject is a data class to store both an associated email and a list of integers to contain the assigned images. 
+              
             </p>
             <div class="view-projects">
               <a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/index.php">
