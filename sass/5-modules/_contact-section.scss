@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    
+
     .contact-info {
         width: 100%;
     }
@@ -12,22 +12,70 @@
     .contact-form {
         width: 100%;
 
-        input, textarea {
+        input,
+        textarea {
             width: 100%;
             padding: 10px;
             border-radius: 5px;
-            border: none;
             box-sizing: border-box;
             background-color: #dadbdd;
             margin-bottom: 10px;
+            border-style: solid;
+            border-color: red;
+            border-width: 2px;
+            outline: none !important;
+
+            &:focus {
+                border-color: none;
+            }
         }
 
         .message-box {
             resize: none;
             min-height: 150px;
-            
         }
 
     }
 }
 
+
+
+.error-success {
+    display: block;
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.158);
+    box-shadow: 0px 0px 8px 0px #0000006e;
+    white-space: normal;
+    width: fit-content;
+
+    &:hover {
+        background-color: rgba(77, 77, 77, 0.13);
+    }
+
+    p {
+        color: rgb(0, 160, 0);
+        padding: 10px;
+        font-size: large;
+    }
+}
+
+.error-failure {
+    display: block;
+    margin-right: 40px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.158);
+    box-shadow: 0px 0px 8px 0px #0000006e;
+    white-space: normal;
+    width: fit-content;
+
+    &:hover {
+        background-color: rgba(75, 7, 7, 0.13);
+    }
+
+    p {
+        color: red;
+        padding: 10px;
+        font-size: large;
+    }
+}

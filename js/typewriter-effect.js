@@ -24,32 +24,3 @@ typeWriter();
 
 
 
-
-
-
-
-
-
-
-
-
-//DO THIS LATER IF YOU HAVE TIME YOU ARE WASTING TIME
-
-//To do list
-//run delay on the entire functionality
-//Run so long the counter is below the length
-// get the actual place you want the 
-
-var j = 0;
-function typeyWriter (text) {
-  //first hide the og text
-  if(j=0) {
-    text.innerHTML.text = "";
-  }
-  if (j < text.length) {
-  
-  }
-}
-
-
-
