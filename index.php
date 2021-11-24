@@ -46,7 +46,7 @@
           <a href="./pages/about-me.html">About Me</a>
         </li>
         <li>
-          <a href="./index.html#project-area">My Portfolio</a>
+          <a href="./index.php#project-area">My Portfolio</a>
         </li>
         <li>
           <a href="./pages/coding-examples.html">Coding Examples</a>
