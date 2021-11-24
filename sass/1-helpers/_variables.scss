@@ -39,6 +39,10 @@ $bold: 700;
 // font stacks
 $raleway-font-stack: "Raleway", "Raleway-Italic" , Helvetica, Verdana, sans-serif;
 
+@font-face {
+    font-family: raleway-font-stack;
+    src: url("../fonts/Raleway-VariableFont_wght.ttf");
+  }
 
 // *****************
 // Sass varibles and maps
