@@ -40,7 +40,7 @@ if (isset($_POST)) {
     //grab connection
     include_once("../inc/Database-Connection.php");
 
-    $sql = "INSERT INTO `contact-form-data`(`first_name`, `last_name`, `email_address`, `subject`, `message`) VALUES(?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO `contact-form-data-portfolio`(`first_name`, `last_name`, `email_address`, `subject`, `message`) VALUES(?, ?, ?, ?, ?)";
 
     $stmt = $db->prepare($sql);
 

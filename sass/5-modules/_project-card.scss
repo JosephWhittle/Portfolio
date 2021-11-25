@@ -6,6 +6,11 @@
     width: 100%;
     box-sizing: border-box;
     margin-top: 40px;
+
+    //the background colour
+    box-shadow: 0px 0px 8px 0px #0000006e;
+    background-color: rgba(0, 0, 0, 0.158);
+    
     
 
     //The image at the top
@@ -13,6 +18,7 @@
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+
         img {
             width: 100%;
             height: 100%;
@@ -24,13 +30,59 @@
         }
     }
 
+    .tech-icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+
+        padding-left: 20px;
+        padding-right: 20px;
+        
+
+        i {
+            font-size: 3rem;
+        }
+
+        //The classes for the logos 
+        .i-html {
+            color: #e54c21;
+            &:hover {
+                color: rgb(190, 190, 190);
+            }
+        }
+        .i-css {
+            color: #2965f1;
+            &:hover {
+                color: rgb(190, 190, 190);
+            }
+        }
+        .i-js {
+            color: #f7df1f;
+            &:hover {
+                color: rgb(190, 190, 190);
+            }
+        }
+        .i-php {
+            color: #4f5b93;
+            &:hover {
+                color: rgb(190, 190, 190);
+            }
+        }
+        .line-fill {
+            display: block;
+        }
+    }
+
     //The description area for the card
     .description-area {
+        padding-left: 20px;
+        padding-right: 20px;
+        
         h2 {
+            padding-top: 20px;
 
         }
         p {
-
         }
     }
 }

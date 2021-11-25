@@ -110,14 +110,27 @@
 
         <!--Project cards-->
         <div id="project-area" class="vertical-margins horizontal-margins">
+          <!--#HTML/CSS Project card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <div class="img-area hover-image-highlight">
-              <img src="./images/Netmatters-preview.PNG" alt="Project Netmatters website preview image">
-            </div>
+            <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/Netmatters-preview.PNG" alt="Project Netmatters website preview image">
+              </div>
+            </a>
             <div class="description-area">
-              <h2>HTML/CSS Reflection</h2>
+              <h2>Netmatters Site</h2>
               <p>A from scratch recreated version of Netmatters company website, using sass/css/html/js.
+                <br class="line-fill">
+                &nbsp;
+                <br class="line-fill">
+                &nbsp;
               </p>
+            </div>
+            <div class="tech-icons">
+              <i class="fab fa-html5 i-html"></i>
+              <i class="fab fa-css3-alt i-css"></i>
+              <i class="fab fa-js i-js"></i>
+              <i class="fab fa-php i-php"></i>
             </div>
             <div class="view-projects">
               <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
@@ -128,18 +141,27 @@
               </a>
             </div>
           </div>
+          <!--#endregion -->
+
+          <!--#Image Linker card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <div class="img-area hover-image-highlight">
-              <img src="https://plchldr.co/i/1920x1040?&bg=E31B6D&fc=fff&text=Project-Image-Preview">
-            </div>
+            <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/Image-linker.png">
+              </div>
+            </a>
             <div class="description-area">
-              <h2>Project Title</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's.
+              <h2>Emage</h2>
+              <p>A Javascript driven website that allows the user to input a regex validated email address that can then have images assigned to it. These images are pulled from Lorem Picsum.
               </p>
             </div>
+            <div class="tech-icons">
+              <i class="fab fa-html5 i-html"></i>
+              <i class="fab fa-css3-alt i-css"></i>
+              <i class="fab fa-js i-js"></i>
+            </div>
             <div class="view-projects">
-              <a href="">
+              <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
                 <span>
                   View Project
                 </span>
@@ -147,18 +169,32 @@
               </a>
             </div>
           </div>
+          <!--#endregion -->
+
+
+          <!--#Quality builders card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <div class="img-area hover-image-highlight">
-              <img src="https://plchldr.co/i/1920x1040?&bg=E31B6D&fc=fff&text=Project-Image-Preview">
-            </div>
+            <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/qualityBuilders-preview.PNG">
+              </div>
+            </a>
             <div class="description-area">
-              <h2>Project Title</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's.
+              <h2>Quality builders</h2>
+              <p>A project built with a fellow coursemate using HTML/CSS and JS for the contact form validation.
+                <br class="line-fill">
+                &nbsp;
+                <br class="line-fill">
+                &nbsp;
               </p>
             </div>
+            <div class="tech-icons">
+              <i class="fab fa-html5 i-html"></i>
+              <i class="fab fa-css3-alt i-css"></i>
+              <i class="fab fa-js i-js"></i>
+            </div>
             <div class="view-projects">
-              <a href="">
+              <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
                 <span>
                   View Project
                 </span>
@@ -166,25 +202,7 @@
               </a>
             </div>
           </div>
-          <div class="card set-width-thirds set-width-half set-width-full">
-            <div class="img-area hover-image-highlight">
-              <img src="https://plchldr.co/i/1920x1040?&bg=E31B6D&fc=fff&text=Project-Image-Preview">
-            </div>
-            <div class="description-area">
-              <h2>Project Title</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's.
-              </p>
-            </div>
-            <div class="view-projects">
-              <a href="">
-                <span>
-                  View Project
-                </span>
-                <span class="material-icons">arrow_forward</span>
-              </a>
-            </div>
-          </div>
+          <!--#endregion -->
         </div>
 
 

@@ -116,7 +116,7 @@
                
             </p>
             <div class="view-projects">
-              <a href="">
+              <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
                 <span>
                   View Project
                 </span>
@@ -131,7 +131,7 @@
             <pre>
               <code>
                 <h3>Database</h3>
-                <img src="./images/movie-database.png" alt="Image displaying a SQL database represnting information about a movie.">
+                <img src="../images/movie-database.png" alt="Image displaying a SQL database represnting information about a movie.">
               </code>
               <code> 
                 SELECT mov_title AS "Movie Title", mov_time AS "Runtime", mov_rel_country AS "Release Location"<br>
@@ -161,7 +161,7 @@
             </div>
           </div>
           <div class="example-block">
-            <h2>Image Linker</h2>
+            <h2>Emage</h2>
             <pre>
               <code>
                 if(emailObjects.length != 0) {<br>
@@ -188,7 +188,52 @@
               
             </p>
             <div class="view-projects">
-              <a href="https://www.w3resource.com/sql-exercises/movie-database-exercise/index.php">
+              <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="example-block">
+            <h2>PHP - Newstiles</h2>
+            <pre>
+              <code>
+                // (Remeber array keys are from 0, not 1)
+                function wrapTile($tile, $index) {
+                  //place the tile inside 
+                
+                  $wrappedTile = "
+                  <div class='tile-wrapper'>
+                  <div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'>
+                  " . $tile . "
+                  </div>          
+                  </div>  
+                  ";
+                
+                  if($index == 2) {
+                    $wrappedTile = "
+                    <div class='tile-wrapper hide-tablet hide-desktop'>
+                    <div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'>
+                    " . $tile . "
+                    </div>          
+                    </div>  
+                    ";
+                  }
+                
+                  return $wrappedTile;
+                }
+              </code>
+            </pre>
+            <p>
+              This section of PHP takes in a tile (Essentially a stamp of tags with the database data inserted into it) and wraps it in some more tags
+              that required some more specific formatting. In this case, the third tile from the newstiles section on the front page requires some 
+              specific additonal classes in order to hide it on smaller viewports. The code contaconates data from the tile with news tags to make 
+              the tile generation procedural. 
+            </p>
+            <div class="view-projects">
+              <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/index.php#latest-section-id">
                 <span>
                   View Project
                 </span>

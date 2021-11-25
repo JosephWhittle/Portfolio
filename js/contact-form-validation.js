@@ -13,7 +13,6 @@ function validateInput() {
     const inputElements = [];
     inputElements.push(firstName, lastName, emailAddress, subject, message);
 
-    const checkedInputElements = [];
 
 
     //Current client side validation does email and empty fields, ill more as I have time and find approprirate regex
@@ -22,36 +21,37 @@ function validateInput() {
         let curElement = inputElements[index];
 
         if(curElement.value.length != 0) {
-            checkedInputElements.push(curElement);
             //is not empty
             curElement.style.borderColor = "green";
 
             if((curElement.name == "emailAddress") && (validateEmail(curElement.value))) {
-                checkedInputElements.push(curElement);
-                curElement.style.borderColor = "purple";
+                curElement.style.borderColor = "green";
             } else if(curElement.name == "emailAddress")  {
-                checkedInputElements.splice(curElement ,1);
                 curElement.style.borderColor = "red";
             }
         }
         else {
             //is empty field
-            checkedInputElements.splice(curElement ,1);
             curElement.style.borderColor = "red";
         }
     }
 
+    let count = 0;
+    inputElements.forEach(element => {
+        if(element.style.borderColor == "green") {
+            count++;
+        }
 
-    //now when they are all good, allow the button to be pressed
-    if (checkedInputElements.length < 5) {
-        submitButton.disabled = true;
-    } else {
-        submitButton.disabled = false;
-        //show a error message or smth
-    }
+        if(count >= 5) {
+            submitButton.disabled = false;
+        }
+        else {
+            submitButton.disabled = true;
+        }
+        console.log(count);
+    });
 
-    //UNDO THIS, WHEN YOU WORK OUT HOW TO ACCESS CPANEL SQLDATABASES
-    submitButton.disabled = true;
+
 }
 
 
@@ -64,5 +64,4 @@ function validateEmail(email) {
 //function to remove an error'ed element from the php validation
 function removeOnClick(element) {
     element.parentNode.removeChild(element);
-    el.remove();
 }

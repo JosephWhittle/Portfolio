@@ -2,6 +2,11 @@
    
    //The button/text that links to the more detailed page for the project
     .view-projects {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        
         :first-child {
             vertical-align: middle;
         }
