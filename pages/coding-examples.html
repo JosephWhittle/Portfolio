@@ -8,10 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--favicon/page name-->
-  <title>Portfolio | Joseph Whittle</title>
-  <meta name="description" content="Personal Portfolio represnting web development work by Joseph Whittle">
-  <meta name="author" content="">
-  <link rel="shortcut icon" href="./images/favicon-32x32-pink.png">
+  <title>Coding Example | Joseph Whittle</title>
+  <meta name="description" content="Coding examples from portoflio pieces showing by Joseph Whittle.">
+  <link rel="shortcut icon" href="../images/favicon-32x32-pink.png">
 
   <!--API's-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -111,9 +110,11 @@
               </code>
             </pre>
             <p>
-              The above code is SASS written to assign some styling to the the cookies popup, it does this by using the "last child" and "first child"
-              selectors and then by slightly carefully laying out the html this is quick and efficiant way to add some styling.
-               
+              The above code is SASS written to assign some styling to the the cookies popup, it does this by using the
+              "last child" and "first child"
+              selectors and then by slightly carefully laying out the html this is quick and efficiant way to add some
+              styling.
+
             </p>
             <div class="view-projects">
               <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
@@ -128,18 +129,18 @@
           </div>
           <div class="example-block">
             <h2>SQL Reflection</h2>
+            <h3>Database</h3>
             <pre>
               <code>
-                <h3>Database</h3>
                 <img src="../images/movie-database.png" alt="Image displaying a SQL database represnting information about a movie.">
               </code>
               <code> 
-                SELECT mov_title AS "Movie Title", mov_time AS "Runtime", mov_rel_country AS "Release Location"<br>
-                FROM movie<br>
-                WHERE mov_id =<br> 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(SELECT mov_id<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM rating <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WHERE rev_stars > 10);<br> 
+                SELECT mov_title AS "Movie Title", mov_time AS "Runtime", mov_rel_country AS "Release Location"
+                FROM movie
+                WHERE mov_id =
+                (SELECT mov_id
+                FROM rating 
+                WHERE rev_stars > 10);
               </code>
             </pre>
             <p>
@@ -164,28 +165,33 @@
             <h2>Emage</h2>
             <pre>
               <code>
-                if(emailObjects.length != 0) {<br>
-                  for (let i = 0; i < emailObjects.length; i++) {<br>
-                      if(emailObjects[i].email == currentlyInputEmail) <br>{
-                          //found email<br>
-                          console.log("found " + emailObjects[i].email)<br>
-                          doesEmailExist = true;<br>
-                          foundEmailObjIndex = i;<br>
-                      }<br>
-                      else {<br>
-                          //finished looping and not found it<br>
-                          doesEmailExist = false;<br>
-                      }<br>
-                  }<br>
-              }<br>
+                if(emailObjects.length != 0) {
+                  for (let i = 0; i &lt; emailObjects.length; i++) {
+                      if(emailObjects[i].email == currentlyInputEmail) {
+                          //found email
+                          console.log("found " + emailObjects[i].email)
+                          doesEmailExist = true;
+                          foundEmailObjIndex = i;
+                      }
+                      else {
+                          //finished looping and not found it
+                          doesEmailExist = false;
+                      }
+                  }
+                }
+
               </code>
             </pre>
             <p>
-              This section of code is taken from a project that grabs images from Lorem Picsum and then displays them as a grid on the page. You can then
-              assign them to an email address and return all the images assigned to that email address. The snippet of code above contains the logic that handles iterating throughout the array that handles all the emails+assocated images and checks whether an email already exists in the storage. 
-              
-              The emailObject is a data class to store both an associated email and a list of integers to contain the assigned images. 
-              
+              This section of code is taken from a project that grabs images from Lorem Picsum and then displays them as
+              a grid on the page. You can then
+              assign them to an email address and return all the images assigned to that email address. The snippet of
+              code above contains the logic that handles iterating throughout the array that handles all the
+              emails+assocated images and checks whether an email already exists in the storage.
+
+              The emailObject is a data class to store both an associated email and a list of integers to contain the
+              assigned images.
+
             </p>
             <div class="view-projects">
               <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
@@ -200,37 +206,17 @@
             <h2>PHP - Newstiles</h2>
             <pre>
               <code>
-                // (Remeber array keys are from 0, not 1)
-                function wrapTile($tile, $index) {
-                  //place the tile inside 
-                
-                  $wrappedTile = "
-                  <div class='tile-wrapper'>
-                  <div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'>
-                  " . $tile . "
-                  </div>          
-                  </div>  
-                  ";
-                
-                  if($index == 2) {
-                    $wrappedTile = "
-                    <div class='tile-wrapper hide-tablet hide-desktop'>
-                    <div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'>
-                    " . $tile . "
-                    </div>          
-                    </div>  
-                    ";
-                  }
-                
-                  return $wrappedTile;
-                }
+                // (Remeber array keys are from 0, not 1)<br/>                function wrapTile($tile, $index) {<br/>                  //place the tile inside <br/>                  $wrappedTile = &quot;<br/>                  &lt;div class='tile-wrapper'&gt;<br/>                  &lt;div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'&gt;<br/>                  &quot; . $tile . &quot;<br/>                  &lt;/div&gt;          <br/>                  &lt;/div&gt;  <br/>                  &quot;;<br/>                  if($index == 2) {<br/>                    $wrappedTile = &quot;<br/>                    &lt;div class='tile-wrapper hide-tablet hide-desktop'&gt;<br/>                    &lt;div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'&gt;<br/>                    &quot; . $tile . &quot;<br/>                    &lt;/div&gt;          <br/>                    &lt;/div&gt;  <br/>                    &quot;;<br/>                  }<br/>                  return $wrappedTile;<br/>                }
               </code>
             </pre>
             <p>
-              This section of PHP takes in a tile (Essentially a stamp of tags with the database data inserted into it) and wraps it in some more tags
-              that required some more specific formatting. In this case, the third tile from the newstiles section on the front page requires some 
-              specific additonal classes in order to hide it on smaller viewports. The code contaconates data from the tile with news tags to make 
-              the tile generation procedural. 
+              This section of PHP takes in a tile (Essentially a stamp of tags with the database data inserted into it)
+              and wraps it in some more tags
+              that required some more specific formatting. In this case, the third tile from the newstiles section on
+              the front page requires some
+              specific additonal classes in order to hide it on smaller viewports. The code contaconates data from the
+              tile with news tags to make
+              the tile generation procedural.
             </p>
             <div class="view-projects">
               <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/index.php#latest-section-id">

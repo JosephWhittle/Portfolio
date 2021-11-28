@@ -147,7 +147,7 @@
           <div class="card set-width-thirds set-width-half set-width-full">
             <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
-                <img src="./images/Image-linker.png">
+                <img src="./images/Image-linker.png"  alt="A preview to the image linker application.">
               </div>
             </a>
             <div class="description-area">
@@ -176,7 +176,7 @@
           <div class="card set-width-thirds set-width-half set-width-full">
             <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
-                <img src="./images/qualityBuilders-preview.PNG">
+                <img src="./images/qualityBuilders-preview.PNG"  alt="Preview of a site built for builders.">
               </div>
             </a>
             <div class="description-area">
@@ -219,25 +219,24 @@
             $returnedUrl = "http://£_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
             if (strpos($returnedUrl, "contactform=empty") == true) {
               echo "<span onclick='removeOnClick(this)' class='error-failure'>";
-              echo "<p> Some fields are empty, please ensure all fields are filled in</p>";
+              echo "Some fields are empty, please ensure all fields are filled in";
               echo "</span>";
             }
 
             if (strpos($returnedUrl, "name=illegalCharacters") == true) {
               echo "<span onclick='removeOnClick(this)' class='error-failure'>";
-              echo "<p>The name field contains illegal characters</p>";
+              echo "The name field contains illegal characters";
               echo "</span>";
             }
             if (strpos($returnedUrl, "email=incorrectFormat") == true) {
               echo "<span onclick='removeOnClick(this)' class='error-failure'>";
-              echo "<p>Please check the email field is a properly formated email address</p>";
+              echo "Please check the email field is a properly formated email address";
               echo "</span>";
             }
 
-
             if (strpos($returnedUrl, "contact-form-submission=success") == true) {
               echo "<span onclick='removeOnClick(this)' class='error-success'>";
-              echo "<p>Information submitted successfully!</p>";
+              echo "Information submitted successfully!";
               echo "</span>";
             }
 
@@ -256,8 +255,9 @@
               <input id="subject" placeholder="Subject" type="text" name="subject">
             </fieldset>
             <fieldset>
-              <textarea id="message" class="message-box" placeholder="Message" type="text" name="message"></textarea>
+              <textarea id="message" class="message-box" placeholder="Message" name="message"></textarea>
             </fieldset>
+            <fieldset>
             <button id="submitButton" class="btn" name="submit" type="submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
