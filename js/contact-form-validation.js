@@ -6,49 +6,77 @@ function validateInput() {
     const subject = document.getElementById("subject");
     const message = document.getElementById("message");
 
+    //grab all the error boxes at the end of the inputs
+    const checkboxFName = document.getElementById("firstName-id");
+    const checkboxLName = document.getElementById("lastName-id");
+    const checkboxEmailAddress = document.getElementById("emailAddress-id");
+    const checkboxSubject = document.getElementById("subject-id");
+    const checkboxMessage = document.getElementById("message-id");
+
     //get a link to the submit button to prevent unwanted input (Technically this only affects css but thats fine for now)
     const submitButton = document.getElementById("submitButton");
 
-    //array so that I can loop through the input elements instead of doing them all individually as, loads are just text fields tbh
-    const inputElements = [];
-    inputElements.push(firstName, lastName, emailAddress, subject, message);
-
-
-
-    //Current client side validation does email and empty fields, ill more as I have time and find approprirate regex
-    for (let index = 0; index < inputElements.length; index++) {
-        //establish iterator element varible
-        let curElement = inputElements[index];
-
-        if(curElement.value.length != 0) {
-            //is not empty
-            curElement.style.borderColor = "green";
-
-            if((curElement.name == "emailAddress") && (validateEmail(curElement.value))) {
-                curElement.style.borderColor = "green";
-            } else if(curElement.name == "emailAddress")  {
-                curElement.style.borderColor = "red";
-            }
-        }
-        else {
-            //is empty field
-            curElement.style.borderColor = "red";
-        }
+    //first name validation
+    if (validateInputLength(1, 100, firstName.value)) {
+        firstName.style.borderColor = "green";
+        checkboxFName.classList.add("fa-check-circle");
+    } else {
+        firstName.style.borderColor = "rgba(0, 0, 0, 0.158)";
+        checkboxFName.classList.remove("fa-check-circle");
     }
 
-    let count = 0;
-    inputElements.forEach(element => {
-        if(element.style.borderColor == "green") {
+    //last name validation
+    if (validateInputLength(1, 100, lastName.value)) {
+        lastName.style.borderColor = "green";
+        checkboxLName.classList.add("fa-check-circle");
+    } else {
+        lastName.style.borderColor = "rgba(0, 0, 0, 0.158)";
+        checkboxLName.classList.remove("fa-check-circle");
+    }
+
+    //email validation
+    if (validateEmail(emailAddress.value)) {
+        emailAddress.style.borderColor = "green";
+        checkboxEmailAddress.classList.add("fa-check-circle");
+    } else {
+        emailAddress.style.borderColor = "rgba(0, 0, 0, 0.158)";
+        checkboxEmailAddress.classList.remove("fa-check-circle");
+    }
+
+    //subject validation
+    if (validateInputLength(3, 250, subject.value)) {
+        subject.style.borderColor = "green";
+        checkboxSubject.classList.add("fa-check-circle");
+    } else {
+        subject.style.borderColor = "rgba(0, 0, 0, 0.158)";
+        checkboxSubject.classList.remove("fa-check-circle");
+    }
+
+    //Message validation
+    if (validateInputLength(1, 5000, message.value)) {
+        message.style.borderColor = "green";
+        checkboxMessage.classList.add("fa-check-circle");
+    } else {
+        message.style.borderColor = "rgba(0, 0, 0, 0.158)";
+        checkboxMessage.classList.remove("fa-check-circle");
+    }
+
+
+    //submit button
+    let submitCheck = [];
+    submitCheck.push(checkboxFName, checkboxLName, checkboxEmailAddress, checkboxSubject, checkboxMessage);
+
+    let count = 0
+    submitCheck.forEach(element => {
+        if(element.classList.contains("fa-check-circle")) {
             count++;
         }
-
-        if(count >= 5) {
+        if(count >= 5){
             submitButton.disabled = false;
         }
         else {
             submitButton.disabled = true;
         }
-        console.log(count);
     });
 
 
@@ -59,6 +87,17 @@ function validateInput() {
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
+}
+
+
+//To run a charactor check, by setting a min and max and returns true if it falls between the two
+function validateInputLength(min, max, input) {
+    var length = input.length;
+    if (length >= min && length <= max) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 //function to remove an error'ed element from the php validation

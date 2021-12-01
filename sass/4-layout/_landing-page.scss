@@ -10,26 +10,42 @@
   justify-content: center;
 
 
+  .scroll {
+    margin-top: auto;
 
-    h1 {
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: normal;
-      max-height: 128px;
-
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        margin-top: 0;
-      }
-    
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+      margin-bottom: auto;
     }
+  }
 
-    .scroll {
-      margin-top: auto;
+}
 
-      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-        margin-bottom: auto;
-      }
-    }
+//the top text of the main title that gets typed in
+.top-text {
+  @include h1-vr;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: normal;
+  max-height: 128px;
 
+  @media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    margin-top: 0;
+  }
+}
+
+//the bottom text of the main title that gets typed in 
+.bottom-text {
+  @include h2-vr;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: normal;
+  max-height: 128px;
+
+  @media screen and (-ms-high-contrast: active),
+  (-ms-high-contrast: none) {
+    margin-top: 0;
+  }
 }

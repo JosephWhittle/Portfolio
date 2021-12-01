@@ -28,8 +28,11 @@
 
   <div id="page-container">
 
+    <div onclick="closeNavBar();" id="opacity-layer">
+    </div>
+
     <!--The side bar-->
-    <nav class="nav-bar">
+    <nav id="nav-bar-id" class="nav-bar">
       <span id="main-icon">
         <a href=".././index.php">
           JW
@@ -67,7 +70,7 @@
     </nav>
 
     <!--Fixed Burger Button-->
-    <button type="button" class="burger-btn ">
+    <button  onclick="openNavBar();" id="mobile-button" type="button" class="burger-btn ">
       <span>
         <span class="bar1"></span>
         <span class="bar2"></span>
@@ -148,6 +151,7 @@
       </div>
     </div>
   </div>
+  <script src="../js/mobile-menu.js"></script>
 </body>
 
 </html>

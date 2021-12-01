@@ -54,7 +54,7 @@ if (isset($_POST)) {
 
     //ayy you successfully made it to the end of the file, and the data is in a db
     //now return to the contact page, refreshed
-    header("location: ../index.php?contact-form-submission=success");
+    header("location: ../index.php?contact-form-submission=success#contactId");
 
 
 } else {

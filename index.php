@@ -29,13 +29,16 @@
 
 </head>
 
-<body>
+<body class="">
 
   <div id="page-container">
-    <!--Not sure this needs to be there-->
+    
+
+  <div onclick="closeNavBar();" id="opacity-layer">
+  </div>
 
     <!--The side bar-->
-    <nav class="nav-bar set-nav-bar">
+    <nav id="nav-bar-id" class="nav-bar set-nav-bar">
       <span id="main-icon">
         <a href="./index.php">
           JW
@@ -60,12 +63,12 @@
       </ul>
       <ul id="social-icon-list">
         <li class="social-icon hover-background-github">
-          <a href="https://github.com/JosephWhittle">
+          <a  target="_blank" href="https://github.com/JosephWhittle">
             <i class="fab fa-github-square"></i>
           </a>
         </li>
         <li class="social-icon hover-background-linkedin">
-          <a href="https://www.linkedin.com/in/josephwhittle/">
+          <a target="_blank" href="https://www.linkedin.com/in/josephwhittle/">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
@@ -75,7 +78,7 @@
 
 
     <!--Fixed Burger Button-->
-    <button type="button" class="burger-btn ">
+    <button onclick="openNavBar();" id="mobile-button" type="button" class="burger-btn ">
       <span>
         <span class="bar1"></span>
         <span class="bar2"></span>
@@ -91,11 +94,10 @@
       <div class="landing-page">
 
         <!--Your js needs to inject and get the below part-->
-        <h1 id="typewriter-hook-title">
-        </h1>
-        <h2 id="typewriter-hook-subtitle">
-        </h2>
-
+        <span class="top-text" id="typewriter-hook-title">
+        </span>
+        <span class="bottom-text" id="typewriter-hook-subtitle">
+        </span>
 
         <!--Scroll on the landing page-->
         <span class="scroll hover-image-highlight">
@@ -147,7 +149,7 @@
           <div class="card set-width-thirds set-width-half set-width-full">
             <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
-                <img src="./images/Image-linker.png"  alt="A preview to the image linker application.">
+                <img src="./images/Image-linker.png" alt="A preview to the image linker application.">
               </div>
             </a>
             <div class="description-area">
@@ -176,7 +178,7 @@
           <div class="card set-width-thirds set-width-half set-width-full">
             <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
-                <img src="./images/qualityBuilders-preview.PNG"  alt="Preview of a site built for builders.">
+                <img src="./images/qualityBuilders-preview.PNG" alt="Preview of a site built for builders.">
               </div>
             </a>
             <div class="description-area">
@@ -245,20 +247,27 @@
           </div>
           <form id="contactId" class="contact-form set-width-half-2" oninput="validateInput()" action="./inc/contact-form-functions.php" method="POST">
             <fieldset>
-              <input id="firstName" placeholder="First Name" type="text" name="firstName">
-              <input id="lastName" placeholder="Last Name" type="text" name="lastName">
+              <input id="firstName" placeholder="First Name *" type="text" name="firstName">
+              <i id="firstName-id" class="fas"></i>
+              </fieldset>
+              <fieldset>
+              <input id="lastName" placeholder="Last Name *" type="text" name="lastName">
+              <i id="lastName-id" class="fas"></i>
             </fieldset>
             <fieldset>
-              <input id="emailAddress" placeholder="Email Address" type="text" name="emailAddress">
+              <input id="emailAddress" placeholder="Email Address *" type="text" name="emailAddress">
+              <i id="emailAddress-id" class="fas"></i>
             </fieldset>
             <fieldset>
-              <input id="subject" placeholder="Subject" type="text" name="subject">
+              <input id="subject" placeholder="Subject *" type="text" name="subject">
+              <i id="subject-id" class="fas"></i>
             </fieldset>
             <fieldset>
-              <textarea id="message" class="message-box" placeholder="Message" name="message"></textarea>
+              <textarea id="message" class="message-box" placeholder="Message *" name="message"></textarea>
+              <i id="message-id" class="fas"></i>
             </fieldset>
             <fieldset>
-            <button id="submitButton" class="btn" name="submit" type="submit" data-submit="...Sending">Submit</button>
+              <button id="submitButton" class="btn" name="submit" type="submit" data-submit="...Sending">Submit</button>
             </fieldset>
           </form>
         </div>
@@ -279,6 +288,7 @@
 
   <!--script tag javascript file imports below (Make sure jquery comes first if applicable) -->
   <script src="./app.js"></script>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/typewriter-effect.js"></script>
   <script src="./js/contact-form-validation.js"></script>
 

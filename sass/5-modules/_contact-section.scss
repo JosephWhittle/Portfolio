@@ -22,29 +22,44 @@
         textarea {
             width: 100%;
             padding: 10px;
+            padding-right: 30px;
             border-radius: 5px;
             box-sizing: border-box;
             background-color: #dadbdd;
             margin-bottom: 10px;
             border-style: solid;
-            border-color: red;
             border-width: 2px;
+            border-color: rgba(0, 0, 0, 0.158);
             outline: none !important;
 
             &:focus {
-                border-color: none;
+                border-color: rgba(0, 0, 0, 0.158);
+                border-width: 2px;
             }
         }
+
+    
 
         .message-box {
             resize: none;
             min-height: 150px;
+            font-family: $raleway-font-stack;
+            font-size: 1rem;
         }
 
         button {
             margin-right: auto;
             margin-left: auto;
         }
+
+
+    }
+
+    i {
+        font-size: 1.5rem;
+        position: absolute;
+        color: green;
+        transform: translate3d(-30px, 8px, 0);
 
     }
 }
@@ -59,16 +74,14 @@
     box-shadow: 0px 0px 8px 0px #0000006e;
     white-space: normal;
     width: fit-content;
+    padding: 20px;
+    color: rgb(0, 160, 0);
+    font-size: large;
 
     &:hover {
         background-color: rgba(77, 77, 77, 0.13);
     }
 
-    p {
-        color: rgb(0, 160, 0);
-        padding: 10px;
-        font-size: large;
-    }
 }
 
 .error-failure {
@@ -79,14 +92,12 @@
     box-shadow: 0px 0px 8px 0px #0000006e;
     white-space: normal;
     width: fit-content;
+    padding: 20px;
+    color: red;
+    font-size: large;
 
     &:hover {
         background-color: rgba(75, 7, 7, 0.13);
     }
 
-    p {
-        color: red;
-        padding: 10px;
-        font-size: large;
-    }
 }

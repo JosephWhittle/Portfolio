@@ -27,8 +27,11 @@
 
   <div id="page-container">
 
+    <div onclick="closeNavBar();" id="opacity-layer">
+    </div>
+
     <!--The side bar-->
-    <nav class="nav-bar">
+    <nav id="nav-bar-id" class="nav-bar">
       <span id="main-icon">
         <a href=".././index.php">
           JW
@@ -66,7 +69,7 @@
     </nav>
 
     <!--Fixed Burger Button-->
-    <button type="button" class="burger-btn ">
+    <button onclick="openNavBar();" id="mobile-button" type="button" class="burger-btn ">
       <span>
         <span class="bar1"></span>
         <span class="bar2"></span>
@@ -79,7 +82,7 @@
 
       <!--Title area-->
       <div class="headed-title">
-        <h1>
+        <h1 class="h1-mini">
           Coding Examples
         </h1>
       </div>
@@ -90,23 +93,26 @@
         <div id="coding-examples" class="vertical-margins horizontal-margins">
           <div class="example-block">
             <h2>HTML/CSS Reflection</h2>
+            <h3>
+              SASS Styling for the Cookie consent Pop-up
+            </h3>
             <pre>
               <code>
-                //the main text of the cookie<br>
-                .cookie-body {<br>
-                    padding: 20px;<br>
-                    p:First-child {<br>
-                        line-height: 1.875rem;<br>
-                        margin-bottom: 25px;<br>
-                        color: #666;<br>
-                        font-size: 1rem;<br>
-                    }<br>
-                    p:last-child {<br>
-                        line-height: 1.875rem;<br>
-                        color: #666;<br>
-                        font-size: 1rem;<br>
-                    }<br>
-                }<br>
+  //the main text of the cookie
+  .cookie-body {
+      padding: 20px;
+      p:First-child {
+          line-height: 1.875rem;
+          margin-bottom: 25px;
+          color: #666;
+          font-size: 1rem;
+      }
+      p:last-child {
+          line-height: 1.875rem;
+          color: #666;
+          font-size: 1rem;
+      }
+  }
               </code>
             </pre>
             <p>
@@ -114,7 +120,6 @@
               "last child" and "first child"
               selectors and then by slightly carefully laying out the html this is quick and efficiant way to add some
               styling.
-
             </p>
             <div class="view-projects">
               <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
@@ -134,13 +139,18 @@
               <code>
                 <img src="../images/movie-database.png" alt="Image displaying a SQL database represnting information about a movie.">
               </code>
+            </pre>
+            <h3>
+              Query
+            </h3>
+            <pre>
               <code> 
-                SELECT mov_title AS "Movie Title", mov_time AS "Runtime", mov_rel_country AS "Release Location"
-                FROM movie
-                WHERE mov_id =
-                (SELECT mov_id
-                FROM rating 
-                WHERE rev_stars > 10);
+  SELECT mov_title AS "Movie Title", mov_time AS "Runtime", mov_rel_country AS "Release Location"
+  FROM movie
+  WHERE mov_id =
+  (SELECT mov_id
+  FROM rating 
+  WHERE rev_stars > 10);
               </code>
             </pre>
             <p>
@@ -162,24 +172,26 @@
             </div>
           </div>
           <div class="example-block">
-            <h2>Emage</h2>
+            <h2>Emage Application</h2>
+            <h3>
+              Duplicate email loop check
+            </h3>
             <pre>
               <code>
-                if(emailObjects.length != 0) {
-                  for (let i = 0; i &lt; emailObjects.length; i++) {
-                      if(emailObjects[i].email == currentlyInputEmail) {
-                          //found email
-                          console.log("found " + emailObjects[i].email)
-                          doesEmailExist = true;
-                          foundEmailObjIndex = i;
-                      }
-                      else {
-                          //finished looping and not found it
-                          doesEmailExist = false;
-                      }
-                  }
-                }
-
+  if(emailObjects.length != 0) {
+    for (let i = 0; i &lt; emailObjects.length; i++) {
+        if(emailObjects[i].email == currentlyInputEmail) {
+            //found email
+            console.log("found " + emailObjects[i].email)
+            doesEmailExist = true;
+            foundEmailObjIndex = i;
+        }
+        else {
+            //finished looping and not found it
+            doesEmailExist = false;
+        }
+    }
+  }
               </code>
             </pre>
             <p>
@@ -203,10 +215,42 @@
             </div>
           </div>
           <div class="example-block">
-            <h2>PHP - Newstiles</h2>
+            <h2>PHP - Netmatters Reflection</h2>
+            <h3>
+              Tile Wrapper function
+            </h3>
             <pre>
               <code>
-                // (Remeber array keys are from 0, not 1)<br/>                function wrapTile($tile, $index) {<br/>                  //place the tile inside <br/>                  $wrappedTile = &quot;<br/>                  &lt;div class='tile-wrapper'&gt;<br/>                  &lt;div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'&gt;<br/>                  &quot; . $tile . &quot;<br/>                  &lt;/div&gt;          <br/>                  &lt;/div&gt;  <br/>                  &quot;;<br/>                  if($index == 2) {<br/>                    $wrappedTile = &quot;<br/>                    &lt;div class='tile-wrapper hide-tablet hide-desktop'&gt;<br/>                    &lt;div class='content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds'&gt;<br/>                    &quot; . $tile . &quot;<br/>                    &lt;/div&gt;          <br/>                    &lt;/div&gt;  <br/>                    &quot;;<br/>                  }<br/>                  return $wrappedTile;<br/>                }
+  function wrapTile($tile) {
+    //place the tile inside 
+  
+    $wrappedTile = &#x22;
+    &#x3C;div class=&#x27;tile-wrapper&#x27;&#x3E;
+    &#x3C;div class=&#x27;content-item-2 tile-medium-halfs tile-small-half-width tile-large-thirds&#x27;&#x3E;
+    &#x22; . $tile . &#x22;
+    &#x3C;/div&#x3E;          
+    &#x3C;/div&#x3E;  
+    &#x22;;
+  
+    return $wrappedTile;
+  }
+              </code>
+            </pre>
+            <h3>
+              The function being used to populate the newstiles
+            </h3>
+            <pre>
+              <code style="white-space:pre-wrap">
+  //the following contains an array of the rows, then each row is an
+  //array containing the values, then you access as follows: (tile_value[image])
+  foreach($newsTiles as $tile_key =&#x3E; $tile_value) {
+    echo wrapTile(createTile(
+      $tile_value[&#x27;image&#x27;],
+      $tile_value[&#x27;title&#x27;],
+      $tile_value[&#x27;description&#x27;],
+      $tile_value[&#x27;author&#x27;],
+      $tile_value[&#x27;post_date&#x27;]));
+  }
               </code>
             </pre>
             <p>
@@ -241,6 +285,9 @@
       </div>
     </div>
   </div>
+
+  <script src="../js/mobile-menu.js"></script>
+
 </body>
 
 </html>

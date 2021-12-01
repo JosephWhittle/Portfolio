@@ -5,5 +5,6 @@
   margin-left:$nav-bar-width;
   overflow-x: hidden;
   background-color: $primary-background-colour;
-  @include set-margin-in-bounds(0px, left, 0px, 768px);
+  transition: 0.5s;
+  @include set-margin-in-bounds(0px, left, 0px, 767px);
 }
