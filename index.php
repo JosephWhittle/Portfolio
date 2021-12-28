@@ -32,10 +32,10 @@
 <body class="">
 
   <div id="page-container">
-    
 
-  <div onclick="closeNavBar();" id="opacity-layer">
-  </div>
+
+    <div onclick="closeNavBar();" id="opacity-layer">
+    </div>
 
     <!--The side bar-->
     <nav id="nav-bar-id" class="nav-bar set-nav-bar">
@@ -63,12 +63,12 @@
       </ul>
       <ul id="social-icon-list">
         <li class="social-icon hover-background-github">
-          <a  target="_blank" href="https://github.com/JosephWhittle">
+          <a target="_blank" target="_blank" href="https://github.com/JosephWhittle">
             <i class="fab fa-github-square"></i>
           </a>
         </li>
         <li class="social-icon hover-background-linkedin">
-          <a target="_blank" href="https://www.linkedin.com/in/josephwhittle/">
+          <a target="_blank" target="_blank" href="https://www.linkedin.com/in/josephwhittle/">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
@@ -114,7 +114,7 @@
         <div id="project-area" class="vertical-margins horizontal-margins">
           <!--#HTML/CSS Project card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
+            <a target="_blank" href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
                 <img src="./images/Netmatters-preview.PNG" alt="Project Netmatters website preview image">
               </div>
@@ -135,7 +135,7 @@
               <i class="fab fa-php i-php"></i>
             </div>
             <div class="view-projects">
-              <a href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
+              <a target="_blank" href="https://netmatters.joseph-whittle.netmatters-scs.co.uk/">
                 <span>
                   View Project
                 </span>
@@ -147,9 +147,9 @@
 
           <!--#Image Linker card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
+            <a target="_blank" href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
-                <img src="./images/Image-linker.png" alt="A preview to the image linker application.">
+                <img src="./images/Image-linker-preview.png" alt="A preview to the image linker application.">
               </div>
             </a>
             <div class="description-area">
@@ -163,7 +163,7 @@
               <i class="fab fa-js i-js"></i>
             </div>
             <div class="view-projects">
-              <a href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
+              <a target="_blank" href="https://emage.joseph-whittle.netmatters-scs.co.uk/">
                 <span>
                   View Project
                 </span>
@@ -173,10 +173,9 @@
           </div>
           <!--#endregion -->
 
-
           <!--#Quality builders card  -->
           <div class="card set-width-thirds set-width-half set-width-full">
-            <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
+            <a target="_blank" href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
               <div class="img-area hover-image-highlight">
                 <img src="./images/qualityBuilders-preview.PNG" alt="Preview of a site built for builders.">
               </div>
@@ -196,7 +195,97 @@
               <i class="fab fa-js i-js"></i>
             </div>
             <div class="view-projects">
-              <a href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
+              <a target="_blank" href="https://qualitybuilders.joseph-whittle.netmatters-scs.co.uk/">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!--#endregion -->
+
+          <!--#Wordpress project  -->
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <a target="_blank" href="https://wordpress.joseph-whittle.netmatters-scs.co.uk/">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/wordpress-preview.png" alt="Preview of a site built for builders.">
+              </div>
+            </a>
+            <div class="description-area">
+              <h2>Wordpress Project</h2>
+              <p>A Wordpress site built using a child-theme and blocksy.
+                <br class="line-fill">
+                &nbsp;
+                <br class="line-fill">
+                &nbsp;
+              </p>
+            </div>
+            <div class="tech-icons">
+            <i class="fab fa-wordpress i-wordpress"></i>
+            </div>
+            <div class="view-projects">
+              <a target="_blank" href="https://wordpress.joseph-whittle.netmatters-scs.co.uk/">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!--#endregion -->
+
+          <!--#Woocommerce card  -->
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <a target="_blank" href="https://woocommerce.joseph-whittle.netmatters-scs.co.uk/">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/woocommerce-preview.jpg" alt="Preview of a site built for builders.">
+              </div>
+            </a>
+            <div class="description-area">
+              <h2>Woocommerce Project</h2>
+              <p>A Wordpress store built using woocommerce.
+                <br class="line-fill">
+                &nbsp;
+                <br class="line-fill">
+                &nbsp;
+              </p>
+            </div>
+            <div class="tech-icons">
+             <i class="fab fa-wordpress i-wordpress"></i>
+             <i class="i-woocommerce"></i>
+            </div>
+            <div class="view-projects">
+              <a target="_blank" href="https://Woocommerce.joseph-whittle.netmatters-scs.co.uk/">
+                <span>
+                  View Project
+                </span>
+                <span class="material-icons">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <!--#endregion -->
+
+          <!--#Another card  -->
+          <div class="card set-width-thirds set-width-half set-width-full">
+            <a target="_blank" href="">
+              <div class="img-area hover-image-highlight">
+                <img src="./images/pawel-czerwinski-lDtmU_ABtcU-unsplash.jpg" alt="">
+              </div>
+            </a>
+            <div class="description-area">
+              <h2>Another Project</h2>
+              <p>Another project
+                <br class="line-fill">
+                &nbsp;
+                <br class="line-fill">
+                &nbsp;
+              </p>
+            </div>
+            <div class="tech-icons">
+            </div>
+            <div class="view-projects">
+              <a target="_blank" href="">
                 <span>
                   View Project
                 </span>
@@ -249,8 +338,8 @@
             <fieldset>
               <input id="firstName" placeholder="First Name *" type="text" name="firstName">
               <i id="firstName-id" class="fas"></i>
-              </fieldset>
-              <fieldset>
+            </fieldset>
+            <fieldset>
               <input id="lastName" placeholder="Last Name *" type="text" name="lastName">
               <i id="lastName-id" class="fas"></i>
             </fieldset>

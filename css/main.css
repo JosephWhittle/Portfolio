@@ -667,6 +667,19 @@ a {
 .card .tech-icons .i-php:hover {
   color: #bebebe;
 }
+.card .tech-icons .i-wordpress {
+  color: #117ac9;
+}
+.card .tech-icons .i-wordpress:hover {
+  color: #bebebe;
+}
+.card .tech-icons .i-woocommerce {
+  content: url(../images/WooCommerce_logo.svg);
+  height: 48px;
+}
+.card .tech-icons .i-woocommerce:hover {
+  content: url(../images/WooCommerce_logo_grey.svg);
+}
 .card .tech-icons .line-fill {
   display: block;
 }

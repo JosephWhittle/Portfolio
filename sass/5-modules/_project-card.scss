@@ -68,6 +68,21 @@
                 color: rgb(190, 190, 190);
             }
         }
+
+        .i-wordpress {
+            color: #117ac9;
+            &:hover {
+                color: rgb(190, 190, 190);
+            }
+        }
+
+        .i-woocommerce {
+            content: url(../images/WooCommerce_logo.svg);
+            height: 48px;
+            &:hover {
+                content: url(../images/WooCommerce_logo_grey.svg);
+            }
+        }
         .line-fill {
             display: block;
         }
